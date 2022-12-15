@@ -1,0 +1,37 @@
+.header {
+  // display: flex;
+  // flex-direction: column;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgb(255, 255, 255, 0.95);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  &__logo-link {
+    display: block;
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px 38px;
+  }
+
+  &__icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  &__icon {
+    cursor: pointer;
+    width: 40px;
+  }
+}

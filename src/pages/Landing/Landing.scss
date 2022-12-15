@@ -1,0 +1,80 @@
+$dropdown-time: 1.5s;
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+  max-height: 400px;
+  height: 40vh;
+  animation: dropdown $dropdown-time cubic-bezier(0, 0, 0.35, 2);
+
+  &__heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  &__sub-heading {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  &__stack {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 280px;
+    flex-wrap: wrap;
+  }
+
+  &__stack-item {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0.4rem;
+    margin-bottom: 0.5rem;
+    list-style: none;
+    animation: stack-fly-in 0.5s ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: $dropdown-time;
+    $i: 0;
+
+    @for $num from 2 through 10 {
+      &:nth-child(#{$num}) {
+        $i: $i + 0.2s;
+        animation-delay: ($dropdown-time + $i);
+      }
+    }
+  }
+}
+
+/*KEYFRAMES*/
+@keyframes dropdown {
+  0% {
+    transform: translateY(-400px);
+  }
+
+  80% {
+    transform: translateY(0);
+  }
+
+  90% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes stack-fly-in {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
