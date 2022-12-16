@@ -1,3 +1,5 @@
+@use "../../styles/partials/mixins" as *;
+
 .header {
   position: sticky;
   top: 0;
@@ -9,7 +11,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  max-width: 1400px;
+  max-width: 1024px;
   margin: 0 auto;
 
   &__logo-link {
@@ -32,4 +34,8 @@
     cursor: pointer;
     width: 40px;
   }
+}
+
+.div {
+  display: none;
 }
