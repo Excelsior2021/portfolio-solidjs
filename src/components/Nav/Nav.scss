@@ -12,8 +12,11 @@
   max-width: 1400px;
   margin: 0 auto;
 
+  &__logo {
+    display: flex;
+  }
+
   &__logo-link {
-    display: block;
     color: black;
     font-size: 3rem;
     font-weight: bold;

@@ -1,6 +1,6 @@
 import { createSignal } from "solid-js";
 import { A } from "@solidjs/router";
-import MenuModal from "../MenuModal/MenuModal";
+import Menu from "../Menu/Menu";
 import menu from "../../assets/icons/menu.png";
 import menuClose from "../../assets/icons/menu-close.png";
 import "./Nav.scss";
@@ -26,7 +26,7 @@ const Nav = () => (
         </div>
       </div>
       <Show when={menuOpen()} fallback={null}>
-        <MenuModal closeModal={() => setMenuOpen(false)} />
+        <Menu closeModal={() => setMenuOpen(false)} />
       </Show>
     </header>
   </>

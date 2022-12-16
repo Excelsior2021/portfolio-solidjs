@@ -1,5 +1,5 @@
 import { A } from "@solidjs/router";
-import "./MenuModal.scss";
+import "./Menu.scss";
 
 const pages = ["bio", "projects", "contact"];
 
@@ -15,7 +15,7 @@ const MenuItem = props => (
   </li>
 );
 
-const MenuModal = props => (
+const Menu = props => (
   <div class="menu-modal" onclick={props.closeModal}>
     <ul class="menu-modal__list">
       <For each={pages}>
@@ -25,4 +25,4 @@ const MenuModal = props => (
   </div>
 );
 
-export default MenuModal;
+export default Menu;

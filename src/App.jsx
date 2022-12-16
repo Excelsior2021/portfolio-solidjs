@@ -1,5 +1,5 @@
 import { Routes, Route } from "@solidjs/router";
-import MenuModal from "./components/MenuModal/MenuModal";
+import MenuModal from "./components/Menu/Menu";
 import Nav from "./components/Nav/Nav";
 import Landing from "./pages/Landing/Landing";
 import Bio from "./pages/Bio/Bio";
