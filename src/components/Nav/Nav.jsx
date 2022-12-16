@@ -11,7 +11,7 @@ const Nav = () => (
   <>
     <header class="header">
       <div class="nav">
-        <div className="nav__logo">
+        <div className="nav__logo" onclick={() => setMenuOpen(false)}>
           <A href="/" class="nav__logo-link">
             Jonathan Kila
           </A>

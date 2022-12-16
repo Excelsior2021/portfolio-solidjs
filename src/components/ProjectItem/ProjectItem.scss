@@ -1,0 +1,53 @@
+.project {
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  flex-direction: column;
+  width: 92.4%;
+  height: fit-content;
+  margin: 2rem auto;
+  padding: 1.6rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    color: black;
+    text-decoration: none;
+  }
+
+  &__card-arrow {
+    display: block;
+  }
+
+  &__body {
+    margin-top: 16px;
+    &--close {
+      display: none;
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+
+    &:hover {
+      transform: scale(1.005);
+      box-shadow: 0 2px 8px rgba(0, 0, 0.1, 0.25);
+    }
+  }
+
+  &__description,
+  &__stack {
+    margin: 1.6rem auto;
+  }
+
+  &__stack {
+    font-style: italic;
+  }
+}
