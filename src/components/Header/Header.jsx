@@ -3,14 +3,14 @@ import { A } from "@solidjs/router";
 import Menu from "../Menu/Menu";
 import menu from "../../assets/icons/menu.png";
 import menuClose from "../../assets/icons/menu-close.png";
-import "./Nav.scss";
+import "./Header.scss";
 
 const [menuOpen, setMenuOpen] = createSignal(false);
 
-const Nav = () => (
+const Header = () => (
   <>
     <header class="header">
-      <div class="nav">
+      <nav class="nav">
         <div className="nav__logo" onclick={() => setMenuOpen(false)}>
           <A href="/" class="nav__logo-link">
             Jonathan Kila
@@ -24,12 +24,17 @@ const Nav = () => (
             onclick={() => setMenuOpen(!menuOpen())}
           />
         </div>
-      </div>
-      <Show when={menuOpen()} fallback={null}>
-        <Menu closeModal={() => setMenuOpen(false)} />
-      </Show>
+        <div className="nav__menu--desktop">
+          <Menu closeModal={() => setMenuOpen(false)} />
+        </div>
+      </nav>
+      <nav className="nav__menu--mobile">
+        <Show when={menuOpen()} fallback={null}>
+          <Menu closeModal={() => setMenuOpen(false)} />
+        </Show>
+      </nav>
     </header>
   </>
 );
 
-export default Nav;
+export default Header;

@@ -4,11 +4,12 @@ import "./Menu.scss";
 const pages = ["bio", "projects", "contact"];
 
 const MenuItem = props => (
-  <li class="menu-modal__item">
+  <li class="menu__item">
     <A
       href={`/${props.page}`}
-      class="menu-modal__link"
+      class="menu__link"
       onclick={props.closeModal}
+      activeClass="menu__link--active"
     >
       {props.page}
     </A>
@@ -16,8 +17,8 @@ const MenuItem = props => (
 );
 
 const Menu = props => (
-  <div class="menu-modal" onclick={props.closeModal}>
-    <ul class="menu-modal__list">
+  <div class="menu" onclick={props.closeModal}>
+    <ul class="menu__list">
       <For each={pages}>
         {page => <MenuItem page={page} closeModal={props.closeModal} />}
       </For>

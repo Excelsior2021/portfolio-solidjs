@@ -1,9 +1,18 @@
-.menu-modal {
+@use "../../styles/partials/mixins" as *;
+
+.menu {
   position: fixed;
   width: 100%;
   height: 100%;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.7);
+
+  @include media-desktop {
+    display: flex;
+    align-items: center;
+    position: static;
+    background-color: transparent;
+  }
 
   &__list {
     position: absolute;
@@ -12,12 +21,22 @@
     display: flex;
     flex-direction: column;
     width: 60%;
+
+    @include media-desktop {
+      position: static;
+      flex-direction: row;
+      background-color: transparent;
+    }
   }
 
   &__item {
     list-style: none;
     text-align: center;
     border-bottom: 1px solid rgb(175, 175, 175);
+
+    @include media-desktop {
+      border: none;
+    }
   }
 
   &__link {
@@ -29,5 +48,16 @@
     padding: 3.5rem 0;
     font-size: 2.2rem;
     font-weight: bold;
+    text-transform: capitalize;
+
+    &--active {
+      color: grey;
+    }
+
+    @include media-desktop {
+      border: none;
+      margin: 0 3rem;
+      padding: 0 1rem;
+    }
   }
 }

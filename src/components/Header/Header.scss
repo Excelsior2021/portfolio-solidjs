@@ -11,8 +11,24 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  max-width: 1024px;
+  max-width: 1280px;
   margin: 0 auto;
+
+  &__menu {
+    &--mobile {
+      @include media-desktop {
+        display: none;
+      }
+    }
+
+    &--desktop {
+      display: none;
+
+      @include media-desktop {
+        display: block;
+      }
+    }
+  }
 
   &__logo {
     display: flex;
@@ -31,6 +47,10 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+
+    @include media-desktop {
+      display: none;
+    }
   }
 
   &__icon {
