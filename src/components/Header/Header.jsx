@@ -10,24 +10,26 @@ const [menuOpen, setMenuOpen] = createSignal(false);
 const Header = () => (
   <>
     <header class="header">
-      <nav class="nav">
+      <div className="header__container">
         <div className="nav__logo" onclick={() => setMenuOpen(false)}>
           <A href="/" class="nav__logo-link">
             Jonathan Kila
           </A>
         </div>
-        <div class="nav__icon-container">
-          <img
-            src={menuOpen() ? menuClose : menu}
-            alt="menu"
-            class="nav__icon"
-            onclick={() => setMenuOpen(!menuOpen())}
-          />
-        </div>
-        <div className="nav__menu--desktop">
-          <Menu closeModal={() => setMenuOpen(false)} />
-        </div>
-      </nav>
+        <nav class="nav">
+          <div class="nav__icon-container">
+            <img
+              src={menuOpen() ? menuClose : menu}
+              alt="menu"
+              class="nav__icon"
+              onclick={() => setMenuOpen(!menuOpen())}
+            />
+          </div>
+          <div className="nav__menu--desktop">
+            <Menu closeModal={() => setMenuOpen(false)} />
+          </div>
+        </nav>
+      </div>
       <nav className="nav__menu--mobile">
         <Show when={menuOpen()} fallback={null}>
           <Menu closeModal={() => setMenuOpen(false)} />

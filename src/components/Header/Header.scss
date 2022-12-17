@@ -6,13 +6,17 @@
   left: 0;
   z-index: 10;
   background-color: rgb(255, 255, 255, 0.95);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
 }
 
 .nav {
   display: flex;
-  justify-content: space-between;
-  max-width: 1280px;
-  margin: 0 auto;
 
   &__menu {
     &--mobile {
@@ -32,6 +36,7 @@
 
   &__logo {
     display: flex;
+    align-items: center;
   }
 
   &__logo-link {
@@ -40,6 +45,11 @@
     font-weight: bold;
     text-decoration: none;
     padding: 20px 38px;
+
+    @include media-desktop {
+      font-size: 3.5rem;
+      padding: 20px 38px;
+    }
   }
 
   &__icon-container {
@@ -57,8 +67,4 @@
     cursor: pointer;
     width: 40px;
   }
-}
-
-.div {
-  display: none;
 }

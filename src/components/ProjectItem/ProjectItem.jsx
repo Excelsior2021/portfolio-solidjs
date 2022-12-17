@@ -5,21 +5,26 @@ import "./ProjectItem.scss";
 
 const ProjectItem = props => {
   const [cardOpen, setCardOpen] = createSignal(false);
+  const [isLoading, setIsLoading] = createSignal(true);
 
   return (
-    <li class="project">
-      <div class="project__head">
-        <h2 class="project__name">
-          <a
-            class="project__link"
-            href={props.url}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {props.name}
-          </a>
-        </h2>
-        <div class="project__toggle">
+    <li class="project-item">
+      <div
+        class={`project ${isLoading() ? "project--flip" : ""}`}
+        onmouseover={() => setIsLoading(false)}
+        onfocus={() => setIsLoading(false)}
+      >
+        <div class="project__head">
+          <h2 class="project__name">
+            <a
+              class="project__link"
+              href={props.url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {props.name}
+            </a>
+          </h2>
           <img
             class="project__card-arrow"
             src={cardOpen() ? arrowUp : arrowDown}
@@ -28,18 +33,27 @@ const ProjectItem = props => {
             onclick={() => setCardOpen(!cardOpen())}
           />
         </div>
-      </div>
-      <div class={cardOpen() ? "project__body" : "project__body--close"}>
-        <div className="project__image-container">
-          <a href={props.url} target="_blank" rel="noreferrer">
-            <img class="project__image" src={props.img} alt={props.alt} />
-          </a>
-        </div>
-        <div className="project__description">
-          <p>{props.description}</p>
-        </div>
-        <div className="project__stack">
-          <p>stack: {props.stack}</p>{" "}
+
+        <div
+          class={
+            cardOpen()
+              ? "project__body project__body--desktop"
+              : "project__body--close project__body--desktop"
+          }
+        >
+          <div className="project__image-container">
+            <a href={props.url} target="_blank" rel="noreferrer">
+              <img class="project__image" src={props.img} alt={props.alt} />
+            </a>
+          </div>
+          <div className="project__info">
+            <div className="project__description">
+              <p>{props.description}</p>
+            </div>
+            <div className="project__stack">
+              <p>stack: {props.stack}</p>{" "}
+            </div>
+          </div>
         </div>
       </div>
     </li>

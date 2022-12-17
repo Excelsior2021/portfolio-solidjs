@@ -106,9 +106,9 @@ const Projects = () => (
         target="_blank"
         rel="noreferrer"
       >
-        GitHub profile
+        GitHub
       </a>{" "}
-      for more projects. All projects use Git for version control unless
+      profile for more projects. All projects use Git for version control unless
       otherwise stated.
     </p>
     <ul className="projects__list">
