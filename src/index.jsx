@@ -6,7 +6,7 @@ import "./styles/partials/_globals.scss";
 
 render(
   () => (
-    <Router base="/">
+    <Router>
       <App />
     </Router>
   ),
