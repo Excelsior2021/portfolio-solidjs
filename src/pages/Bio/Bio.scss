@@ -24,6 +24,11 @@
 
   &__text {
     margin: 1.5rem 0;
+
+    &--remark {
+      color: #456b9e;
+      text-align: center;
+    }
   }
 
   &__link {

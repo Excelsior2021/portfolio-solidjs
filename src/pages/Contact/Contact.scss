@@ -1,13 +1,33 @@
+@use "../../styles/partials/mixins" as *;
+
 .contact {
   &__icons {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include media-desktop {
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 10%;
+    }
+  }
+
+  &__icons-link {
+    margin: 16px;
+    animation: contact-icons 1s linear;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @include media-desktop {
+      margin: 36px;
+    }
   }
 
   &__icons-img {
-    margin: 16px;
-    animation: contact-icons 1s linear;
+    display: block;
   }
 }
 

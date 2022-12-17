@@ -31,8 +31,12 @@ const Bio = () => (
 
       <p>
         I also love to travel ✈️. I'm a wannabe muscian 🎹. I love to keep fit
-        🤸🏾‍♂️. I'm a wannabe polyglot. 💬
+        🤸🏾‍♂️. I'm a wannabe polyglot 💬.
       </p>
+
+      <h3 class="bio__text bio__text--remark">
+        This portfolio was developed with SolidJS
+      </h3>
     </div>
 
     <a

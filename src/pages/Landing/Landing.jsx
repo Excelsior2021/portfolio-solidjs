@@ -12,6 +12,7 @@ const stack = [
   "Node",
   "Python",
   "Git",
+  "SolidJS",
 ];
 
 const StackItem = props => <li class="landing__stack-item">{props.tech}.</li>;
