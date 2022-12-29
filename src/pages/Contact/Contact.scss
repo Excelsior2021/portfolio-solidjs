@@ -28,6 +28,12 @@
 
   &__icons-img {
     display: block;
+    width: 100px;
+
+    &--dark-mode {
+      filter: invert(100%) sepia(0%) saturate(6%) hue-rotate(157deg)
+        brightness(100%) contrast(102%);
+    }
   }
 }
 

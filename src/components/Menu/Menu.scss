@@ -23,6 +23,10 @@
     width: 60%;
     max-width: 250px;
 
+    &--dark-mode {
+      background-color: rgba(75, 103, 138, 0.95);
+    }
+
     @include media-desktop {
       position: static;
       flex-direction: row;
@@ -44,7 +48,6 @@
 
   &__link {
     display: block;
-    color: black;
     text-decoration: none;
     cursor: pointer;
     margin: 0;
@@ -65,5 +68,27 @@
       color: grey;
       border-bottom: 1px solid rgb(175, 175, 175);
     }
+  }
+
+  &__theme-toggle-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 300px;
+    right: 0;
+    border-radius: 4px;
+    width: 60%;
+    max-width: 250px;
+    cursor: pointer;
+
+    @include media-desktop {
+      display: none;
+    }
+  }
+
+  &__theme-toggle {
+    filter: invert(89%) sepia(9%) saturate(4661%) hue-rotate(333deg)
+      brightness(107%) contrast(98%);
+    width: 60px;
   }
 }

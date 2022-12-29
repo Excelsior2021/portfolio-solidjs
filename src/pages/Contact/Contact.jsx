@@ -1,8 +1,8 @@
-import githubIcon from "../../assets/contact_icons/icons8-github-120.png";
-import linkedinIcon from "../../assets/contact_icons/icons8-linkedin-128.png";
-import mailIcon from "../../assets/contact_icons/icons8-mail-100.png";
-
-import "./Contact.scss";
+import { darkMode } from "../../components/Header/Header"
+import githubIcon from "../../assets/contact_icons/github.svg"
+import linkedinIcon from "../../assets/contact_icons/linkedin.svg"
+import mailIcon from "../../assets/contact_icons/mail.svg"
+import "./Contact.scss"
 
 const Contact = () => (
   <div class="contact">
@@ -11,23 +11,45 @@ const Contact = () => (
         className="contact__icons-link"
         href="https://github.com/Excelsior2021"
         target="_blank"
-        rel="noreferrer"
-      >
-        <img className="contact__icons-img" alt="github" src={githubIcon} />
+        rel="noreferrer">
+        <img
+          className={
+            darkMode()
+              ? "contact__icons-img contact__icons-img--dark-mode"
+              : "contact__icons-img"
+          }
+          alt="github"
+          src={githubIcon}
+        />
       </a>
       <a
         className="contact__icons-link"
         href="https://www.linkedin.com/in/jonathan-kila"
         target="_blank"
-        rel="noreferrer"
-      >
-        <img className="contact__icons-img" alt="linkedIn" src={linkedinIcon} />
+        rel="noreferrer">
+        <img
+          className={
+            darkMode()
+              ? "contact__icons-img contact__icons-img--dark-mode"
+              : "contact__icons-img"
+          }
+          alt="linkedIn"
+          src={linkedinIcon}
+        />
       </a>
       <a className="contact__icons-link" href="mailto: temidee11@yahoo.co.uk">
-        <img className="contact__icons-img" alt="email" src={mailIcon} />
+        <img
+          className={
+            darkMode()
+              ? "contact__icons-img contact__icons-img--dark-mode"
+              : "contact__icons-img"
+          }
+          alt="email"
+          src={mailIcon}
+        />
       </a>
     </div>
   </div>
-);
+)
 
-export default Contact;
+export default Contact

@@ -16,5 +16,9 @@
   &__text-link {
     color: grey;
     font-weight: bold;
+
+    &--dark-mode {
+      color: rgba(75, 103, 138, 0.95);
+    }
   }
 }

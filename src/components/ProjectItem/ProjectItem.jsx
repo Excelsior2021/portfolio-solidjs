@@ -1,27 +1,30 @@
-import { createSignal } from "solid-js";
-import arrowDown from "../../assets/icons/arrow-down.png";
-import arrowUp from "../../assets/icons/arrow-up.png";
-import "./ProjectItem.scss";
+import { createSignal } from "solid-js"
+import { darkMode } from "../Header/Header"
+import arrowDown from "../../assets/icons/arrow-down.png"
+import arrowUp from "../../assets/icons/arrow-up.png"
+import "./ProjectItem.scss"
 
 const ProjectItem = props => {
-  const [cardOpen, setCardOpen] = createSignal(false);
-  const [isLoading, setIsLoading] = createSignal(true);
+  const [cardOpen, setCardOpen] = createSignal(false)
+  const [isLoading, setIsLoading] = createSignal(true)
 
   return (
     <li class="project-item">
       <div
-        class={`project ${isLoading() ? "project--flip" : ""}`}
+        class={
+          darkMode()
+            ? `project project--dark-mode ${isLoading() ? "project--flip" : ""}`
+            : `project ${isLoading() ? "project--flip" : ""}`
+        }
         onmouseover={() => setIsLoading(false)}
-        onfocus={() => setIsLoading(false)}
-      >
+        onfocus={() => setIsLoading(false)}>
         <div class="project__head">
           <h2 class="project__name">
             <a
               class="project__link"
               href={props.url}
               target="_blank"
-              rel="noreferrer"
-            >
+              rel="noreferrer">
               {props.name}
             </a>
           </h2>
@@ -39,8 +42,7 @@ const ProjectItem = props => {
             cardOpen()
               ? "project__body project__body--desktop"
               : "project__body--close project__body--desktop"
-          }
-        >
+          }>
           <div className="project__image-container">
             <a href={props.url} target="_blank" rel="noreferrer">
               <img class="project__image" src={props.img} alt={props.alt} />
@@ -57,7 +59,7 @@ const ProjectItem = props => {
         </div>
       </div>
     </li>
-  );
-};
+  )
+}
 
-export default ProjectItem;
+export default ProjectItem

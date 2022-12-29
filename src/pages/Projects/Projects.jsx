@@ -1,7 +1,8 @@
-import { For } from "solid-js";
-import projectImages from "../../assets/project_images/project_images";
-import ProjectItem from "../../components/ProjectItem/ProjectItem";
-import "./Projects.scss";
+import { For } from "solid-js"
+import { darkMode } from "../../components/Header/Header"
+import projectImages from "../../assets/project_images/project_images"
+import ProjectItem from "../../components/ProjectItem/ProjectItem"
+import "./Projects.scss"
 
 const projects = [
   {
@@ -94,18 +95,21 @@ const projects = [
     alt: "Target Practice Python Game",
     url: "https://github.com/Excelsior2021/target-practice",
   },
-];
+]
 
 const Projects = () => (
   <div class="projects">
     <p class="projects__text">
       Not an exhuastive list. Please check out my{" "}
       <a
-        class="projects__text-link"
+        class={
+          darkMode()
+            ? "projects__text-link projects__text-link--dark-mode"
+            : "projects__text-link"
+        }
         href="https://github.com/Excelsior2021"
         target="_blank"
-        rel="noreferrer"
-      >
+        rel="noreferrer">
         GitHub
       </a>{" "}
       profile for more projects. All projects use Git for version control unless
@@ -126,6 +130,6 @@ const Projects = () => (
       </For>
     </ul>
   </div>
-);
+)
 
-export default Projects;
+export default Projects
