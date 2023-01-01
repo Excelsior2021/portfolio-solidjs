@@ -53,7 +53,7 @@ $dropdown-time: 1.5s;
       font-size: 1.8rem;
     }
 
-    @for $num from 2 through 11 {
+    @for $num from 2 through 12 {
       &:nth-child(#{$num}) {
         $i: $i + 0.2s;
         animation-delay: ($dropdown-time + $i);

@@ -1,5 +1,5 @@
-import { For } from "solid-js";
-import "./Landing.scss";
+import { For } from "solid-js"
+import "./Landing.scss"
 
 const stack = [
   "React",
@@ -8,14 +8,15 @@ const stack = [
   "SASS",
   "JavaScript",
   "TypeScript",
+  "Next.js",
   "Jest",
   "Node",
   "Python",
   "Git",
   "SolidJS",
-];
+]
 
-const StackItem = props => <li class="landing__stack-item">{props.tech}.</li>;
+const StackItem = props => <li class="landing__stack-item">{props.tech}.</li>
 
 const Landing = () => (
   <div class="landing">
@@ -27,6 +28,6 @@ const Landing = () => (
       </ul>
     </div>
   </div>
-);
+)
 
-export default Landing;
+export default Landing
