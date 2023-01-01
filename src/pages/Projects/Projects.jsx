@@ -16,14 +16,14 @@ const projects = [
     url: "https://smash-it.vercel.app/",
   },
   {
-    id: "go-fish",
-    name: "Go Fish",
+    id: "pairs",
+    name: "Pairs",
     description:
-      "An adaptation of the classic card game Go Fish. This project was very exiting for me to develop, as I had taken a terminal based version I had developed in Python into a visual and interactive version using React. Currently refactoring the application and using automated testing with Jest and React Testing Library.",
-    stack: "React, SASS, Jest",
-    img: projectImages.goFishImg,
-    alt: "Go Fish App",
-    url: "https://excelsior2021.github.io/go-fish",
+      "An interactive card game. Originally developed as a terminal based game with Python, then as a web application using React and now as a web application using SolidJS. This is one of my favourite projects as it has gone through various iterations, from Python to JavaScript with SolidJS. It implements programming logic coupled with a sleek and intuitive UI/UX.",
+    stack: "SolidJS, TypeScript, SASS",
+    img: projectImages.pairsImg,
+    alt: "Pairs App",
+    url: "pairs-card-game.vercel.app",
   },
   {
     id: "ultimate-trivia",
