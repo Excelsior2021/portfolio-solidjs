@@ -23,7 +23,7 @@ const projects = [
     stack: "SolidJS, TypeScript, SASS",
     img: projectImages.pairsImg,
     alt: "Pairs App",
-    url: "pairs-card-game.vercel.app",
+    url: "https://pairs-card-game.vercel.app",
   },
   {
     id: "ultimate-trivia",
