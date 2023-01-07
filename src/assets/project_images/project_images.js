@@ -5,7 +5,6 @@ import googleHomepageImg from "./google-homepage.png"
 import smashItImg from "./smash-it.png"
 import targetPracticeImg from "./target-practice.png"
 import triviaImg from "./trivia.png"
-import typescriptCounterTodosImg from "./typescript-counter-todos.png"
 import vegMealsImg from "./veg-meals.png"
 
 export default {
@@ -17,5 +16,4 @@ export default {
   battleshipImg,
   calculatorImg,
   targetPracticeImg,
-  typescriptCounterTodosImg,
 }

@@ -36,16 +36,6 @@ const projects = [
     url: "https://excelsior2021.github.io/ultimate-trivia/",
   },
   {
-    id: "typescript-counter-todos",
-    name: "TypeScript Counter & Todos",
-    description:
-      "This is my first TypeScript application. After learning the basics of TypeScript, I was eager to use what I had learnt to build a relatively simple app.",
-    stack: "HTML, SASS, TypeScript",
-    img: projectImages.typescriptCounterTodosImg,
-    alt: "TypeScript Counter & Todos App",
-    url: "https://excelsior2021.github.io/TypeScript-counter-todos/",
-  },
-  {
     id: "veg-meals",
     name: "VegMeals",
     description:
@@ -54,6 +44,16 @@ const projects = [
     img: projectImages.vegMealsImg,
     alt: "Veg Meals App",
     url: "https://excelsior2021.github.io/veg-meals/",
+  },
+  {
+    id: "calculator",
+    name: "Calculator",
+    description:
+      "My version of a calculator as a web app developed using React. The most challenging part was implementing the logic, which kept me entertained for hours trying to solve. Now uses TypeScript with React",
+    stack: "React, TypeScript",
+    img: projectImages.calculatorImg,
+    alt: "Calculator App",
+    url: "https://excelsior2021.github.io/calculator",
   },
   {
     id: "battleship",
@@ -75,16 +75,7 @@ const projects = [
     alt: "Google Homepage Clone",
     url: "https://excelsior2021.github.io/google_homepage",
   },
-  {
-    id: "calculator",
-    name: "Calculator",
-    description:
-      "My version of a calculator as a web app developed using React. The most challenging part was implementing the logic, which kept me entertained for hours trying to solve. Now uses TypeScript with React",
-    stack: "React, TypeScript",
-    img: projectImages.calculatorImg,
-    alt: "Calculator App",
-    url: "https://excelsior2021.github.io/calculator",
-  },
+
   {
     id: "target-practice",
     name: "Target Practice",
