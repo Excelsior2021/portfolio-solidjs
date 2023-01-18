@@ -1,5 +1,5 @@
-import headshot from "../../assets/images/headshot.jpg";
-import "./Bio.scss";
+import headshot from "../../assets/images/headshot.jpg"
+import "./Bio.scss"
 
 const Bio = () => (
   <div class="bio">
@@ -30,7 +30,7 @@ const Bio = () => (
       </p>
 
       <p>
-        I also love to travel ✈️. I'm a wannabe muscian 🎹. I love to keep fit
+        I also love to travel ✈️. I'm a wannabe musician 🎹. I love to keep fit
         🤸🏾‍♂️. I'm a wannabe polyglot 💬.
       </p>
 
@@ -43,8 +43,7 @@ const Bio = () => (
       href="https://www.codewars.com/users/excelsior2021"
       target="_blank"
       rel="noreferrer"
-      className="bio__link"
-    >
+      className="bio__link">
       <div className="bio__codewars">
         <label className="bio__codewars-label">Codewars</label>
         <img
@@ -55,6 +54,6 @@ const Bio = () => (
       </div>
     </a>
   </div>
-);
+)
 
-export default Bio;
+export default Bio
