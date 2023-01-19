@@ -59,7 +59,7 @@ const projects = [
     id: "battleship",
     name: "Battleship",
     description:
-      "An adaptation of the classic game Battleship. A project that was a great learning curve for me in developing a front-end application. I had to use relatively complex logic and design the application to be user-friendly. Developed using vanila HTML, CSS & JavaScript.",
+      "An adaptation of the classic game Battleship. A project that was a great learning curve for me in developing a front-end application. I had to use relatively complex logic and design the application to be user-friendly. Developed using vanilla HTML, CSS & JavaScript.",
     stack: "HTML, CSS, JavaScript",
     img: projectImages.battleshipImg,
     alt: "Battleship App",
