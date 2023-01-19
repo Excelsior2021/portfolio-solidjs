@@ -10,7 +10,7 @@ const stack = [
   "TypeScript",
   "Next.js",
   "Jest",
-  "Node",
+  "Node.js",
   "Python",
   "Git",
   "SolidJS",

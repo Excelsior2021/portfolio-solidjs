@@ -10,7 +10,7 @@ const projects = [
     name: "Smash It!",
     description:
       "Performance tracking for table tennis. This is a full-stack application developed the performance of table tennis players and compare it against one another. This project was inspired by the competitve nature of table tennis during my web development bootcamp.",
-    stack: "React, SASS, Node, Express.js, Knex.js, Objection.js, MySQL ",
+    stack: "React, SASS, Node.js, Express.js, Knex.js, Objection.js, MySQL ",
     img: projectImages.smashItImg,
     alt: "Smash It App",
     url: "https://smash-it.vercel.app/",
@@ -19,8 +19,8 @@ const projects = [
     id: "pairs",
     name: "Pairs",
     description:
-      "An interactive card game. Originally developed as a terminal based game with Python, then as a web application using React and now as a web application using SolidJS. This is one of my favourite projects as it has gone through various iterations, from Python to JavaScript with SolidJS. It implements programming logic coupled with a sleek and intuitive UI/UX.",
-    stack: "SolidJS, SASS, TypeScript",
+      "An interactive card game. Originally developed as a terminal based game with Python, then as a web application using React and now as a web application using SolidJS. This is one of my favourite projects as it has gone through various iterations. It implements programming logic coupled with a sleek and intuitive UI/UX. Currently implementing a multiplayer mode that allows two players to play together with the use of web sockets.",
+    stack: "SolidJS, SASS, TypeScript, Node.js, Express.js, Socket.IO",
     img: projectImages.pairsImg,
     alt: "Pairs App",
     url: "https://pairs-card-game.vercel.app",
