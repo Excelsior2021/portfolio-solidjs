@@ -29,7 +29,7 @@ const projects = [
     id: "ultimate-trivia",
     name: "Ultimate Trivia",
     description:
-      "A web application using the Trivia Database API. The app was developed as part of a 24 hour hackathon whilst I was doing a bootcamp in web development. Previously used vanila Javascript, now using TypeScript with webpack 5.",
+      "A web application using the Trivia Database API. The app was developed as part of a 24 hour hackathon whilst I was doing a bootcamp in web development. Previously used vanilla Javascript, now using TypeScript with webpack 5.",
     stack: "HTML, SASS, TypeScript, webpack",
     img: projectImages.triviaImg,
     alt: "Ultimate Trivia App",
