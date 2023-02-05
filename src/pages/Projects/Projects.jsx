@@ -19,7 +19,7 @@ const projects = [
     id: "pairs",
     name: "Pairs",
     description:
-      "An interactive card game. Originally developed as a terminal based game with Python, then as a web application using React and now as a web application using SolidJS. This is one of my favourite projects as it has gone through various iterations. It implements programming logic coupled with a sleek and intuitive UI/UX. Currently implementing a multiplayer mode that allows two players to play together with the use of web sockets.",
+      "An interactive card game. Originally developed as a terminal based game with Python, then as a web application using React and now as a web application using SolidJS. This is one of my favourite projects as it has gone through various iterations. It implements programming logic coupled with a sleek and intuitive UI/UX. There is a multiplayer mode that allows two players to play together with the use of Socket.IO.",
     stack: "SolidJS, SASS, TypeScript, Node.js, Express.js, Socket.IO",
     img: projectImages.pairsImg,
     alt: "Pairs App",
