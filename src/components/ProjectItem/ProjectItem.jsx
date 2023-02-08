@@ -2,6 +2,7 @@ import { createSignal } from "solid-js"
 import { darkMode } from "../Header/Header"
 import arrowDown from "../../assets/icons/arrow-down.png"
 import arrowUp from "../../assets/icons/arrow-up.png"
+import githubIcon from "../../assets/contact_icons/github.svg"
 import "./ProjectItem.scss"
 
 const ProjectItem = props => {
@@ -27,7 +28,19 @@ const ProjectItem = props => {
               rel="noreferrer">
               {props.name}
             </a>
+            <a class="project__github-link" href={props.github} target="_blank">
+              <img
+                class={
+                  darkMode()
+                    ? "project__github project__github--dark-mode"
+                    : "project__github"
+                }
+                src={githubIcon}
+                alt="github"
+              />
+            </a>
           </h2>
+
           <img
             class="project__card-arrow"
             src={cardOpen() ? arrowUp : arrowDown}

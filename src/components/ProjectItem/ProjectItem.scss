@@ -64,9 +64,23 @@
   }
 
   &__name {
+    display: flex;
+    align-items: center;
     @include media-desktop {
       font-size: 3.2rem;
       margin-bottom: 1rem;
+    }
+  }
+
+  &__github {
+    display: block;
+    width: 30px;
+    margin-left: 3rem;
+    cursor: pointer;
+
+    &--dark-mode {
+      filter: invert(100%) sepia(0%) saturate(6%) hue-rotate(157deg)
+        brightness(100%) contrast(102%);
     }
   }
 
@@ -80,6 +94,7 @@
 
   &__card-arrow {
     display: block;
+    cursor: pointer;
 
     @include media-desktop {
       display: none;

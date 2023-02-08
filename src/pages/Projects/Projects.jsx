@@ -14,6 +14,7 @@ const projects = [
     img: projectImages.smashItImg,
     alt: "Smash It App",
     url: "https://smash-it.vercel.app/",
+    github: "https://github.com/Excelsior2021/smash-it",
   },
   {
     id: "pairs",
@@ -24,6 +25,7 @@ const projects = [
     img: projectImages.pairsImg,
     alt: "Pairs App",
     url: "https://pairs-card-game.vercel.app",
+    github: "https://github.com/Excelsior2021/pairs",
   },
   {
     id: "ultimate-trivia",
@@ -34,6 +36,7 @@ const projects = [
     img: projectImages.triviaImg,
     alt: "Ultimate Trivia App",
     url: "https://excelsior2021.github.io/ultimate-trivia/",
+    github: "https://github.com/Excelsior2021/ultimate-trivia",
   },
   {
     id: "veg-meals",
@@ -44,6 +47,7 @@ const projects = [
     img: projectImages.vegMealsImg,
     alt: "Veg Meals App",
     url: "https://excelsior2021.github.io/veg-meals/",
+    github: "https://github.com/Excelsior2021/veg-meals",
   },
   {
     id: "calculator",
@@ -54,6 +58,7 @@ const projects = [
     img: projectImages.calculatorImg,
     alt: "Calculator App",
     url: "https://excelsior2021.github.io/calculator",
+    github: "https://github.com/Excelsior2021/calculator",
   },
   {
     id: "battleship",
@@ -64,6 +69,7 @@ const projects = [
     img: projectImages.battleshipImg,
     alt: "Battleship App",
     url: "https://excelsior2021.github.io/battleship",
+    github: "https://github.com/Excelsior2021/battleship",
   },
   {
     id: "google-homepage",
@@ -74,6 +80,7 @@ const projects = [
     img: projectImages.googleHomepageImg,
     alt: "Google Homepage Clone",
     url: "https://excelsior2021.github.io/google_homepage",
+    github: "https://github.com/Excelsior2021/google_homepage",
   },
 
   {
@@ -85,6 +92,7 @@ const projects = [
     img: projectImages.targetPracticeImg,
     alt: "Target Practice Python Game",
     url: "https://github.com/Excelsior2021/target-practice",
+    github: "https://github.com/Excelsior2021/target-practice",
   },
 ]
 
@@ -116,6 +124,7 @@ const Projects = () => (
             stack={project.stack}
             url={project.url}
             alt={project.alt}
+            github={project.github}
           />
         )}
       </For>
