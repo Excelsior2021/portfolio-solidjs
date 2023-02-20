@@ -11,7 +11,7 @@ const projects = [
       "Performance tracking for table tennis. This is a full-stack application developed the performance of table tennis players and compare it against one another. This project was inspired by the competitve nature of table tennis during my web development bootcamp.",
     stack: "React, SASS, Node.js, Express.js, Knex.js, Objection.js, MySQL ",
     alt: "Smash It App",
-    url: "https://smash-it.vercel.app/",
+    url: "https://smash-it.vercel.app",
     github: "https://github.com/Excelsior2021/smash-it",
   },
   {
@@ -31,8 +31,8 @@ const projects = [
       "A proof of concept for a video streaming web app. A responsive SPA.",
     stack: "React, SASS, TypeScript",
     alt: "View App",
-    url: "https://pairs-card-game.vercel.app",
-    github: "https://github.com/Excelsior2021/pairs",
+    url: "https://view-web-app-client.vercel.app",
+    github: "https://github.com/Excelsior2021/view-web-app-client",
   },
   {
     id: "ultimate-trivia",
@@ -41,7 +41,7 @@ const projects = [
       "A web application using the Trivia Database API. The app was developed as part of a 24 hour hackathon whilst I was doing a bootcamp in web development. Previously used vanilla Javascript, now using TypeScript with webpack 5.",
     stack: "HTML, SASS, TypeScript, webpack",
     alt: "Ultimate Trivia App",
-    url: "https://excelsior2021.github.io/ultimate-trivia/",
+    url: "https://excelsior2021.github.io/ultimate-trivia",
     github: "https://github.com/Excelsior2021/ultimate-trivia",
   },
   {
@@ -51,7 +51,7 @@ const projects = [
       "A representation of a food ordering app. An insightful project where I had to make use of forms and send http requests to a back-end api.",
     stack: "React, Firebase",
     alt: "Veg Meals App",
-    url: "https://excelsior2021.github.io/veg-meals/",
+    url: "https://excelsior2021.github.io/veg-meals",
     github: "https://github.com/Excelsior2021/veg-meals",
   },
   {
