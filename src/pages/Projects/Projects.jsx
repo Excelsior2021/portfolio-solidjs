@@ -35,6 +35,16 @@ const projects = [
     github: "https://github.com/Excelsior2021/view-web-app-client",
   },
   {
+    id: "space-tourism",
+    name: "Space Tourism App POC",
+    description:
+      "A proof of concept for a space torusim app. A responsive SPA with React Router.",
+    stack: "React, SASS, TypeScript",
+    alt: "Space Tourism App",
+    url: "https://space-tourism-poc.vercel.app",
+    github: "https://github.com/Excelsior2021/space-tourism",
+  },
+  {
     id: "ultimate-trivia",
     name: "Ultimate Trivia",
     description:

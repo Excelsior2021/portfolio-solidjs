@@ -1,4 +1,3 @@
-import { createEffect, createSignal } from "solid-js"
 import { Routes, Route } from "@solidjs/router"
 import Header from "./components/Header/Header"
 import Landing from "./pages/Landing/Landing"
@@ -8,12 +7,12 @@ import Contact from "./pages/Contact/Contact"
 
 const App = () => (
   <>
-    <div class="counter">
+    {/* <div class="counter">
       <img
         src="https://www.free-website-hit-counter.com/c.php?d=9&id=142620&s=5"
         alt="Hit Counter"
       />
-    </div>
+    </div> */}
     <Header />
     <main class="main">
       <Routes>
