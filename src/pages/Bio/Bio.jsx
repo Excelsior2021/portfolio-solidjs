@@ -23,15 +23,10 @@ const Bio = () => (
       </p>
 
       <p className="bio__text">
-        I have enough motivation to keep learning solo but I also embarked on a
-        web development bootcamp to enhance my skills and pick up new ones.
-        Also, to fill in any gaps, learn best practices and collaborate with
-        other developers to enable me to be industry ready.
-      </p>
-
-      <p>
-        I also love to travel ✈️. I'm a wannabe musician 🎹. I love to keep fit
-        🤸🏾‍♂️. I'm a wannabe polyglot 💬.
+        I enjoy keep learning independently but I also embarked on a web
+        development bootcamp to enhance my skills and pick up new ones. Also, to
+        fill in any gaps, learn best practices and collaborate with other
+        developers to enable me to be industry ready.
       </p>
 
       <h3 class="bio__text bio__text--remark">
