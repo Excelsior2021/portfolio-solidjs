@@ -35,10 +35,20 @@ const projects = [
     github: "https://github.com/Excelsior2021/view-web-app-client",
   },
   {
+    id: "job-listings",
+    name: "Job Listings POC",
+    description:
+      "A proof of concept for a job listings web app. A responsive SPA. The most challeging part of this project was implementing the filtering feature with Redux Toolkit.",
+    stack: "React, SASS, TypeScript, Redux Toolkit",
+    alt: "Job Listings App",
+    url: "https://job-listings-poc.vercel.app",
+    github: "https://github.com/Excelsior2021/job-listings",
+  },
+  {
     id: "space-tourism",
     name: "Space Tourism App POC",
     description:
-      "A proof of concept for a space torusim app. A responsive SPA with React Router.",
+      "A proof of concept for a space torusim app. Uses React Router.",
     stack: "React, SASS, TypeScript",
     alt: "Space Tourism App",
     url: "https://space-tourism-poc.vercel.app",
