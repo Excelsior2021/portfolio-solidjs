@@ -45,6 +45,16 @@ const projects = [
     github: "https://github.com/Excelsior2021/job-listings",
   },
   {
+    id: "multi-step-form",
+    name: "Multi Step Form",
+    description:
+      "A multi step form built in SolidJS. Uses Solid Store for state management.",
+    stack: "SolidJS, SASS, TypeScript",
+    alt: "multi step form",
+    url: "https://multi-step-form-lorem.vercel.app",
+    github: "https://github.com/Excelsior2021/multi-step-form",
+  },
+  {
     id: "space-tourism",
     name: "Space Tourism App POC",
     description:
