@@ -23,10 +23,10 @@ const Bio = () => (
       </p>
 
       <p className="bio__text">
-        I enjoy keep learning independently but I also embarked on a web
-        development bootcamp to enhance my skills and pick up new ones. Also, to
-        fill in any gaps, learn best practices and collaborate with other
-        developers to enable me to be industry ready.
+        I enjoy learning independently but I also embarked on a web development
+        bootcamp to enhance my skills and pick up new ones. Also, to fill in any
+        gaps, learn best practices and collaborate with other developers to
+        enable me to be industry ready.
       </p>
 
       <h3 class="bio__text bio__text--remark">
