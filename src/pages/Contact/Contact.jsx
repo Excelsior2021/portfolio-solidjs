@@ -8,21 +8,24 @@ const contacts = [
   {
     link: "https://github.com/Excelsior2021",
     img: githubIcon,
+    ariaLabel: "jonathan kila github profile",
   },
   {
     link: "https://www.linkedin.com/in/jonathan-kila",
     img: linkedinIcon,
+    ariaLabel: "jonathan kila linkedin profile",
   },
   {
     link: "mailto: jonathan.kila10@gmail.com",
     img: mailIcon,
+    ariaLabel: "email jonathan kila",
   },
 ]
 
 const Contact = () => (
   <div class="contact">
     <div class="contact__icons">
-      {contacts.map(({ link, img }) => (
+      {contacts.map(({ link, img, ariaLabel }) => (
         <a
           className="contact__icons-link"
           href={link}
@@ -36,6 +39,7 @@ const Contact = () => (
             }
             alt="github"
             src={img}
+            aria-label={ariaLabel}
           />
         </a>
       ))}
