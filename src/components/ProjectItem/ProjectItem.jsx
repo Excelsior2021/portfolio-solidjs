@@ -58,7 +58,12 @@ const ProjectItem = props => {
           }>
           <div className="project__image-container">
             <a href={props.url} target="_blank" rel="noreferrer">
-              <img class="project__image" src={props.img} alt={props.alt} />
+              <img
+                class="project__image"
+                src={props.img}
+                alt={props.alt}
+                role="project link"
+              />
             </a>
           </div>
           <div className="project__info">
