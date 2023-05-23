@@ -74,9 +74,16 @@
 
   &__github {
     display: block;
-    width: 30px;
-    margin-left: 3rem;
+    width: 60px;
+    margin-left: auto;
     cursor: pointer;
+
+    @include media-desktop {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 40px;
+    }
 
     &--dark-mode {
       filter: invert(100%) sepia(0%) saturate(6%) hue-rotate(157deg)
@@ -146,6 +153,7 @@
       flex-direction: column;
       justify-content: space-between;
       width: 70%;
+      position: relative;
     }
   }
 

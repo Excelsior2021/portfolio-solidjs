@@ -28,17 +28,6 @@ const ProjectItem = props => {
               rel="noreferrer">
               {props.name}
             </a>
-            <a class="project__github-link" href={props.github} target="_blank">
-              <img
-                class={
-                  darkMode()
-                    ? "project__github project__github--dark-mode"
-                    : "project__github"
-                }
-                src={githubIcon}
-                alt="github"
-              />
-            </a>
           </h2>
 
           <img
@@ -70,6 +59,17 @@ const ProjectItem = props => {
             <div className="project__description">
               <p>{props.description}</p>
             </div>
+            <a class="project__github-link" href={props.github} target="_blank">
+              <img
+                class={
+                  darkMode()
+                    ? "project__github project__github--dark-mode"
+                    : "project__github"
+                }
+                src={githubIcon}
+                alt="github"
+              />
+            </a>
             <div className="project__stack">
               <p>stack: {props.stack}</p>{" "}
             </div>
