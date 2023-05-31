@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@solidjs/router':
-    specifier: ^0.5.1
-    version: 0.5.1(solid-js@1.5.1)
+    specifier: ^0.8.2
+    version: 0.8.2(solid-js@1.5.1)
   sass:
     specifier: ^1.56.2
     version: 1.56.2
@@ -375,8 +375,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@solidjs/router@0.5.1(solid-js@1.5.1):
-    resolution: {integrity: sha512-igyrwUqm/9T26Lb6l7oXwpc4lLUVqbhbN92wOL3NgLoLVmkQlUNTZciuAe+Su8XeJXlrWjl6oxDJDLt+6pws/g==}
+  /@solidjs/router@0.8.2(solid-js@1.5.1):
+    resolution: {integrity: sha512-gUKW+LZqxtX6y/Aw6JKyy4gQ9E7dLqp513oB9pSYJR1HM5c56Pf7eijzyXX+b3WuXig18Cxqah4tMtF0YGu80w==}
     peerDependencies:
       solid-js: ^1.5.3
     dependencies:
