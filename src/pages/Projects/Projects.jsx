@@ -25,6 +25,16 @@ const projects = [
     github: "https://github.com/Excelsior2021/pairs",
   },
   {
+    id: "ultimate-trivia",
+    name: "Ultimate Trivia",
+    description:
+      "A web application using the Trivia Database API. The app was developed as part of a 24 hour hackathon whilst I was doing a bootcamp in web development. Previously used vanilla Javascript, now using TypeScript with webpack 5.",
+    stack: "HTML, SASS, TypeScript, webpack",
+    alt: "Ultimate Trivia App",
+    url: "https://excelsior2021.github.io/ultimate-trivia",
+    github: "https://github.com/Excelsior2021/ultimate-trivia",
+  },
+  {
     id: "view",
     name: "View Streaming App POC",
     description:
@@ -63,16 +73,6 @@ const projects = [
     alt: "Space Tourism App",
     url: "https://space-tourism-poc.vercel.app",
     github: "https://github.com/Excelsior2021/space-tourism",
-  },
-  {
-    id: "ultimate-trivia",
-    name: "Ultimate Trivia",
-    description:
-      "A web application using the Trivia Database API. The app was developed as part of a 24 hour hackathon whilst I was doing a bootcamp in web development. Previously used vanilla Javascript, now using TypeScript with webpack 5.",
-    stack: "HTML, SASS, TypeScript, webpack",
-    alt: "Ultimate Trivia App",
-    url: "https://excelsior2021.github.io/ultimate-trivia",
-    github: "https://github.com/Excelsior2021/ultimate-trivia",
   },
   {
     id: "veg-meals",
