@@ -6,17 +6,26 @@ import "./Menu.scss"
 
 const pages = ["bio", "projects", "contact"]
 
-const MenuItem = props => (
-  <li class="menu__item">
-    <A
-      href={`/${props.page}`}
-      class="menu__link"
-      onclick={props.closeModal}
-      activeClass="menu__link--active">
-      {props.page}
-    </A>
-  </li>
-)
+const MenuItem = props => {
+  const handleClick = () => {
+    pendo.track("navigation click", {
+      name: props.page,
+      data: "hello world!",
+    })
+  }
+
+  return (
+    <li class="menu__item" onclick={handleClick}>
+      <A
+        href={`/${props.page}`}
+        class="menu__link"
+        onclick={props.closeModal}
+        activeClass="menu__link--active">
+        {props.page}
+      </A>
+    </li>
+  )
+}
 
 const Menu = props => (
   <div class="menu" onclick={props.closeModal}>
