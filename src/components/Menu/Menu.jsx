@@ -17,20 +17,20 @@ const MenuItem = props => {
   const serverTrack = async () => {
     const res = await fetch("https://app.pendo.io/data/track", {
       method: "POST",
-      "Content-Type": "application/json",
+      "content-type": "application/json",
       mode: "no-cors",
-      "x-pendo-integration-key": "b1407d95-851a-44ca-6e83-453f0f857aaa.us",
+      "x-pendo-integration-key": "9faf493e-2ca4-49dc-7178-5bb5966976fb.us",
       body: JSON.stringify({
         type: "track",
         event: "serverTrack",
-        visitorId: "1000",
-        accountId: "1000",
+        visitorId: "",
+        accountId: "",
         timestamp: Date.now(),
         context: {},
       }),
     })
 
-    console.log(await res.json())
+    console.log(res)
   }
 
   return (
