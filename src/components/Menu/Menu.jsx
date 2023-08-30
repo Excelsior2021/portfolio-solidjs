@@ -14,8 +14,24 @@ const MenuItem = props => {
     })
   }
 
+  const serverTrack = async () => {
+    const res = await fetch("https://app.pendo.io/data/track", {
+      method: "POST",
+      "Content-Type": "application/json",
+      "x-pendo-integration-key": "b1407d95-851a-44ca-6e83-453f0f857aaa.us",
+      body: JSON.stringify({
+        type: "track",
+        event: "serverTrack",
+        visitorId: "",
+        accountId: "",
+        timestamp: Date.now(),
+        context: {},
+      }),
+    })
+  }
+
   return (
-    <li class="menu__item" onclick={handleClick}>
+    <li class="menu__item" onclick={serverTrack}>
       <A
         href={`/${props.page}`}
         class="menu__link"
