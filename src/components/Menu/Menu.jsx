@@ -28,6 +28,8 @@ const MenuItem = props => {
         context: {},
       }),
     })
+
+    console.log(await res.json())
   }
 
   return (
