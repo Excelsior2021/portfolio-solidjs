@@ -18,7 +18,6 @@
                 o[m] ||
                 function () {
                   const test = [m].concat([].slice.call(arguments, 0))
-                  console.log(test[1])
                   o._q[m === v[0] ? "unshift" : "push"](test)
                 }
             })(v[w])

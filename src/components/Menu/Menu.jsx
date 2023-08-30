@@ -7,34 +7,34 @@ import "./Menu.scss"
 const pages = ["bio", "projects", "contact"]
 
 const MenuItem = props => {
-  const handleClick = () => {
-    pendo.track("navigation click", {
-      name: props.page,
-      data: "hello world!",
-    })
-  }
+  // const handleClick = () => {
+  //   pendo.track("navigation click", {
+  //     name: props.page,
+  //     data: "hello world!",
+  //   })
+  // }
 
-  const serverTrack = async () => {
-    const res = await fetch("https://app.pendo.io/data/track", {
-      method: "POST",
-      "content-type": "application/json",
-      mode: "no-cors",
-      "x-pendo-integration-key": "0a0cbcf8-1480-42ef-413c-6dbcae0a90e5",
-      body: JSON.stringify({
-        type: "track",
-        event: "serverTrack",
-        visitorId: "1000",
-        accountId: "1000",
-        timestamp: Date.now(),
-        context: {},
-      }),
-    })
+  // const serverTrack = async () => {
+  //   const res = await fetch("https://app.pendo.io/data/track", {
+  //     method: "POST",
+  //     "content-type": "application/json",
+  //     mode: "no-cors",
+  //     "x-pendo-integration-key": "0a0cbcf8-1480-42ef-413c-6dbcae0a90e5",
+  //     body: JSON.stringify({
+  //       type: "track",
+  //       event: "serverTrack",
+  //       visitorId: "1000",
+  //       accountId: "1000",
+  //       timestamp: Date.now(),
+  //       context: {},
+  //     }),
+  //   })
 
-    console.log(res)
-  }
+  //   console.log(res)
+  // }
 
   return (
-    <li class="menu__item" onclick={serverTrack}>
+    <li class="menu__item">
       <A
         href={`/${props.page}`}
         class="menu__link"
