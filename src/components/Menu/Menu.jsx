@@ -18,6 +18,7 @@ const MenuItem = props => {
     const res = await fetch("https://app.pendo.io/data/track", {
       method: "POST",
       "Content-Type": "application/json",
+      mode: "no-cors",
       "x-pendo-integration-key": "b1407d95-851a-44ca-6e83-453f0f857aaa.us",
       body: JSON.stringify({
         type: "track",
