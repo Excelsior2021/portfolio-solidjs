@@ -17,9 +17,9 @@
               o[m] =
                 o[m] ||
                 function () {
-                  o._q[m === v[0] ? "unshift" : "push"](
-                    [m].concat([].slice.call(arguments, 0))
-                  )
+                  const test = [m].concat([].slice.call(arguments, 0))
+                  console.log(test[1])
+                  o._q[m === v[0] ? "unshift" : "push"](test)
                 }
             })(v[w])
           y = e.createElement(n)
@@ -34,6 +34,7 @@
         visitor: {
           id: "VISITOR-UNIQUE-ID",
           screenSize: `${screen.height} × ${screen.width}`,
+          frameworks: ["react", "solidjs", "vue"],
         },
       })
     </script>
