@@ -23,8 +23,8 @@ const MenuItem = props => {
       body: JSON.stringify({
         type: "track",
         event: "serverTrack",
-        visitorId: "",
-        accountId: "",
+        visitorId: "1000",
+        accountId: "1000",
         timestamp: Date.now(),
         context: {},
       }),
