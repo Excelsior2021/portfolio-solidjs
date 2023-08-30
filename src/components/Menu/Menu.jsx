@@ -19,7 +19,7 @@ const MenuItem = props => {
       method: "POST",
       "content-type": "application/json",
       mode: "no-cors",
-      "x-pendo-integration-key": "9faf493e-2ca4-49dc-7178-5bb5966976fb.us",
+      "x-pendo-integration-key": "0a0cbcf8-1480-42ef-413c-6dbcae0a90e5",
       body: JSON.stringify({
         type: "track",
         event: "serverTrack",
