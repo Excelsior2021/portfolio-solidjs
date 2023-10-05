@@ -87,6 +87,7 @@ const projects = [
     id: "battleship",
     name: "Battleship",
     description: "An adaptation of the classic game Battleship.",
+    stack: "HTML, CSS, JavaScript",
     alt: "Battleship App",
     url: "https://excelsior2021.github.io/battleship",
     github: "https://github.com/Excelsior2021/battleship",
