@@ -32,7 +32,7 @@ const projects = [
   {
     id: "view",
     name: "View Streaming App POC",
-    description: "A proof of concept for a video streaming web app.",
+    description: "A proof of concept for a video streaming app.",
     stack: "React, SASS, TypeScript",
     alt: "View App",
     url: "https://view-web-app-client.vercel.app",
@@ -41,7 +41,7 @@ const projects = [
   {
     id: "job-listings",
     name: "Job Listings POC",
-    description: "A proof of concept for a job listings web app.",
+    description: "A proof of concept for a job listings app.",
     stack: "React, SASS, TypeScript, Redux Toolkit",
     alt: "Job Listings App",
     url: "https://job-listings-poc.vercel.app",
@@ -50,7 +50,7 @@ const projects = [
   {
     id: "multi-step-form",
     name: "Multi Step Form",
-    description: "A multi step form built.",
+    description: "A multi step form.",
     stack: "SolidJS, SASS, TypeScript",
     alt: "multi step form",
     url: "https://multi-step-form-lorem.vercel.app",
@@ -68,7 +68,7 @@ const projects = [
   {
     id: "veg-meals",
     name: "VegMeals",
-    description: "A representation of a food ordering app.",
+    description: "A food ordering app.",
     stack: "React, Firebase",
     alt: "Veg Meals App",
     url: "https://excelsior2021.github.io/veg-meals",
@@ -77,7 +77,7 @@ const projects = [
   {
     id: "calculator",
     name: "Calculator",
-    description: "A calculator developed with React.",
+    description: "An online calculator.",
     stack: "React, TypeScript",
     alt: "Calculator App",
     url: "https://excelsior2021.github.io/calculator",
