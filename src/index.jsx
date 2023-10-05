@@ -1,8 +1,8 @@
 /* @refresh reload */
-import { render } from "solid-js/web";
-import { Router } from "@solidjs/router";
-import App from "./App";
-import "./styles/partials/_globals.scss";
+import { render } from "solid-js/web"
+import { Router } from "@solidjs/router"
+import App from "./App"
+import "./partials/_globals.scss"
 
 render(
   () => (
@@ -11,4 +11,4 @@ render(
     </Router>
   ),
   document.getElementById("root")
-);
+)

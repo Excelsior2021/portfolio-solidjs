@@ -43,7 +43,7 @@ const ProjectItem = props => {
           class={
             cardOpen()
               ? "project__body project__body--desktop"
-              : "project__body--close project__body--desktop"
+              : "project__body project__body--close project__body--desktop"
           }>
           <div className="project__image-container">
             <a href={props.url} target="_blank" rel="noreferrer">
@@ -51,28 +51,26 @@ const ProjectItem = props => {
                 class="project__image"
                 src={props.img}
                 alt={props.alt}
-                role="project link"
+                role="project image and link to project site"
               />
             </a>
           </div>
-          <div className="project__info">
-            <div className="project__description">
-              <p>{props.description}</p>
-            </div>
-            <a class="project__github-link" href={props.github} target="_blank">
-              <img
-                class={
-                  darkMode()
-                    ? "project__github project__github--dark-mode"
-                    : "project__github"
-                }
-                src={githubIcon}
-                alt="github"
-              />
-            </a>
-            <div className="project__stack">
-              <p>stack: {props.stack}</p>{" "}
-            </div>
+          <div className="project__description">
+            <p>{props.description}</p>
+          </div>
+          <a class="project__github-link" href={props.github} target="_blank">
+            <img
+              class={
+                darkMode()
+                  ? "project__github project__github--dark-mode"
+                  : "project__github"
+              }
+              src={githubIcon}
+              alt="github"
+            />
+          </a>
+          <div className="project__stack">
+            <p>{props.stack}</p>{" "}
           </div>
         </div>
       </div>

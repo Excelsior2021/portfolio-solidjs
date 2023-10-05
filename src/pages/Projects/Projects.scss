@@ -1,4 +1,4 @@
-@use "../../styles/partials/mixins" as *;
+@use "../../partials/mixins" as *;
 
 .projects {
   &__text {
@@ -19,6 +19,22 @@
 
     &--dark-mode {
       color: rgba(75, 103, 138, 0.95);
+    }
+  }
+
+  &__list {
+    @include media-desktop {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 48px;
+      column-gap: 48px;
+      padding: 24px;
+    }
+
+    @media (min-width: 1080px) {
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 32px;
+      column-gap: 32px;
     }
   }
 }

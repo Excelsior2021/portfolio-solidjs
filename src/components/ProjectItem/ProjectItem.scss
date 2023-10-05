@@ -1,44 +1,45 @@
-@use "../../styles/partials/mixins" as *;
+@use "../../partials/mixins" as *;
 
 .project-item {
-  perspective: 1000px;
+  // perspective: 1000px;
   list-style: none;
 }
 
 .project {
   display: flex;
   flex-direction: column;
+  row-gap: 8px;
   background-color: rgb(233, 233, 233);
-  height: fit-content;
-  margin: 3rem auto;
+  height: 100%;
+  margin: 32px auto;
   padding: 1.6rem;
   border-radius: 6px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
 
-  a {
+  @include media-desktop {
+    // max-width: 500px;
+    // width: 40%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    margin: auto;
+    // transform: rotateX(5deg);
+    animation: card-not-active 0.5s linear;
+
+    &:hover {
+      animation: card-active 0.5s linear;
+      // transform: rotateX(0);
+    }
+  }
+
+  .project__link {
     color: black;
   }
 
   &--dark-mode {
     background-color: rgba(75, 103, 138, 0.95);
 
-    a {
+    .project__link {
       color: rgb(240, 240, 240);
-    }
-  }
-
-  @include media-desktop {
-    max-width: 100rem;
-    width: 92.4%;
-    height: 22rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
-    transform: rotateX(5deg);
-    animation: card-not-active 0.5s linear;
-
-    &:hover {
-      animation: card-active 0.5s linear;
-      transform: rotateX(0);
     }
   }
 
@@ -49,7 +50,7 @@
   &:hover {
     @include media-desktop {
       animation: card-active 0.5s linear;
-      transform: rotateX(0);
+      // transform: rotateX(0);
     }
   }
 
@@ -66,23 +67,30 @@
   &__name {
     display: flex;
     align-items: center;
+
     @include media-desktop {
-      font-size: 3.2rem;
-      margin-bottom: 1rem;
+      font-size: 2.8rem;
+      margin-bottom: 8px;
     }
+  }
+
+  &__github-link {
+    margin-top: auto;
+    // margin-left: auto;
   }
 
   &__github {
     display: block;
     width: 60px;
-    margin-left: auto;
-    cursor: pointer;
+    margin: auto;
+    // cursor: pointer;
 
     @include media-desktop {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: 40px;
+      // position: absolute;
+      // right: 0;
+      // bottom: 0;
+      // width: 40px;
+      // margin-right: auto;
     }
 
     &--dark-mode {
@@ -109,30 +117,34 @@
   }
 
   &__body {
-    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    @include media-desktop {
+      height: 100%;
+      row-gap: 12px;
+    }
 
     &--close {
       display: none;
-    }
 
-    &--desktop {
       @include media-desktop {
         display: flex;
-        height: 100%;
       }
     }
   }
 
   &__image-container {
     @include media-desktop {
-      position: absolute;
-      top: 0;
-      right: 0;
-      display: flex;
-      align-items: center;
-      padding: 1em;
-      max-width: 30%;
-      height: 100%;
+      // position: absolute;
+      // top: 0;
+      // right: 0;
+      // display: flex;
+      // align-items: center;
+      // padding: 1em;
+      // max-width: 30%;
+      // height: 100%;
     }
   }
 
@@ -147,87 +159,80 @@
     }
   }
 
-  &__info {
-    @include media-desktop {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 70%;
-      position: relative;
-    }
-  }
-
   &__description,
   &__stack {
     margin: 1.6rem auto;
 
     @include media-desktop {
-      margin: 0;
+      margin: auto;
     }
   }
 
   &__stack {
-    font-style: italic;
+    text-align: center;
+    margin-top: auto;
+
+    justify-self: flex-end;
   }
 }
 
-@keyframes card-flip {
-  0% {
-    transform: rotateX(90deg);
-    opacity: 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0);
-  }
+// @keyframes card-flip {
+//   0% {
+//     transform: rotateX(90deg);
+//     opacity: 0;
+//     box-shadow: 0 2px 8px rgba(0, 0, 0, 0);
+//   }
 
-  30% {
-    transform: rotateX(-20deg);
-    opacity: 1;
-  }
+//   30% {
+//     transform: rotateX(-20deg);
+//     opacity: 1;
+//   }
 
-  40% {
-    transform: rotateX(20deg);
-  }
+//   40% {
+//     transform: rotateX(20deg);
+//   }
 
-  50% {
-    transform: rotateX(-10deg);
-  }
+//   50% {
+//     transform: rotateX(-10deg);
+//   }
 
-  60% {
-    transform: rotateX(10deg);
-  }
+//   60% {
+//     transform: rotateX(10deg);
+//   }
 
-  70% {
-    transform: rotateX(-5deg);
-  }
+//   70% {
+//     transform: rotateX(-5deg);
+//   }
 
-  80% {
-    transform: rotateX(5deg);
-  }
+//   80% {
+//     transform: rotateX(5deg);
+//   }
 
-  90% {
-    transform: rotateX(0);
-  }
+//   90% {
+//     transform: rotateX(0);
+//   }
 
-  100% {
-    transform: rotateX(5deg);
-  }
-}
+//   100% {
+//     transform: rotateX(5deg);
+//   }
+// }
 
-@keyframes card-active {
-  0% {
-    transform: rotateX(5deg);
-  }
+// @keyframes card-active {
+//   0% {
+//     transform: rotateX(5deg);
+//   }
 
-  100% {
-    transform: rotateX(0);
-  }
-}
+//   100% {
+//     transform: rotateX(0);
+//   }
+// }
 
-@keyframes card-not-active {
-  0% {
-    transform: rotateX(0);
-  }
+// @keyframes card-not-active {
+//   0% {
+//     transform: rotateX(0);
+//   }
 
-  100% {
-    transform: rotateX(5deg);
-  }
-}
+//   100% {
+//     transform: rotateX(5deg);
+//   }
+// }
