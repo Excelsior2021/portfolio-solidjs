@@ -20,7 +20,7 @@ const ProjectItem = props => {
         onmouseover={() => setIsLoading(false)}
         onfocus={() => setIsLoading(false)}>
         <div class="project__head">
-          <h2 class="project__name">
+          <h2 class="project__name project__name--mobile">
             <a
               class="project__link"
               href={props.url}
@@ -29,7 +29,6 @@ const ProjectItem = props => {
               {props.name}
             </a>
           </h2>
-
           <img
             class="project__card-arrow"
             src={cardOpen() ? arrowUp : arrowDown}
@@ -55,6 +54,15 @@ const ProjectItem = props => {
               />
             </a>
           </div>
+          <h2 class="project__name project__name--desktop">
+            <a
+              class="project__link"
+              href={props.url}
+              target="_blank"
+              rel="noreferrer">
+              {props.name}
+            </a>
+          </h2>
           <div className="project__description">
             <p>{props.description}</p>
           </div>

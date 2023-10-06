@@ -1,7 +1,6 @@
 @use "../../partials/mixins" as *;
 
 .project-item {
-  // perspective: 1000px;
   list-style: none;
 }
 
@@ -17,18 +16,9 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
 
   @include media-desktop {
-    // max-width: 500px;
-    // width: 40%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
     margin: auto;
-    // transform: rotateX(5deg);
-    animation: card-not-active 0.5s linear;
-
-    &:hover {
-      animation: card-active 0.5s linear;
-      // transform: rotateX(0);
-    }
   }
 
   .project__link {
@@ -43,17 +33,6 @@
     }
   }
 
-  &--flip {
-    animation: card-flip 1.5s linear 1;
-  }
-
-  &:hover {
-    @include media-desktop {
-      animation: card-active 0.5s linear;
-      // transform: rotateX(0);
-    }
-  }
-
   &__head {
     display: flex;
     justify-content: space-between;
@@ -65,33 +44,32 @@
   }
 
   &__name {
-    display: flex;
-    align-items: center;
+    &--mobile {
+      @include media-desktop {
+        display: none;
+      }
+    }
 
-    @include media-desktop {
-      font-size: 2.8rem;
-      margin-bottom: 8px;
+    &--desktop {
+      display: none;
+
+      @include media-desktop {
+        display: flex;
+        justify-content: center;
+        font-size: 2.8rem;
+        margin-bottom: 8px;
+      }
     }
   }
 
   &__github-link {
     margin-top: auto;
-    // margin-left: auto;
   }
 
   &__github {
     display: block;
     width: 60px;
     margin: auto;
-    // cursor: pointer;
-
-    @include media-desktop {
-      // position: absolute;
-      // right: 0;
-      // bottom: 0;
-      // width: 40px;
-      // margin-right: auto;
-    }
 
     &--dark-mode {
       filter: invert(100%) sepia(0%) saturate(6%) hue-rotate(157deg)
@@ -135,19 +113,6 @@
     }
   }
 
-  &__image-container {
-    @include media-desktop {
-      // position: absolute;
-      // top: 0;
-      // right: 0;
-      // display: flex;
-      // align-items: center;
-      // padding: 1em;
-      // max-width: 30%;
-      // height: 100%;
-    }
-  }
-
   &__image {
     width: 100%;
     border-radius: 0.5em;
@@ -169,69 +134,7 @@
   }
 
   &__stack {
+    text-align: center;
     margin-top: auto;
-
-    justify-self: flex-end;
   }
 }
-
-// @keyframes card-flip {
-//   0% {
-//     transform: rotateX(90deg);
-//     opacity: 0;
-//     box-shadow: 0 2px 8px rgba(0, 0, 0, 0);
-//   }
-
-//   30% {
-//     transform: rotateX(-20deg);
-//     opacity: 1;
-//   }
-
-//   40% {
-//     transform: rotateX(20deg);
-//   }
-
-//   50% {
-//     transform: rotateX(-10deg);
-//   }
-
-//   60% {
-//     transform: rotateX(10deg);
-//   }
-
-//   70% {
-//     transform: rotateX(-5deg);
-//   }
-
-//   80% {
-//     transform: rotateX(5deg);
-//   }
-
-//   90% {
-//     transform: rotateX(0);
-//   }
-
-//   100% {
-//     transform: rotateX(5deg);
-//   }
-// }
-
-// @keyframes card-active {
-//   0% {
-//     transform: rotateX(5deg);
-//   }
-
-//   100% {
-//     transform: rotateX(0);
-//   }
-// }
-
-// @keyframes card-not-active {
-//   0% {
-//     transform: rotateX(0);
-//   }
-
-//   100% {
-//     transform: rotateX(5deg);
-//   }
-// }
