@@ -29,12 +29,12 @@ createEffect(() => {
 
 const Header = () => (
   <header class={darkMode() ? "header header--dark-mode" : "header"}>
-    <div className="header__container">
-      <div className="header__logo" onclick={() => setMenuOpen(false)}>
-        <A href="/" class="header__logo-link">
+    <div class="header__container">
+      <A href="/" class="header__logo-link">
+        <span class="header__logo" onclick={() => setMenuOpen(false)}>
           Jonathan Kila
-        </A>
-      </div>
+        </span>
+      </A>
 
       <nav class="nav">
         <div class="nav__icon-container">
@@ -45,7 +45,7 @@ const Header = () => (
             onclick={() => setMenuOpen(!menuOpen())}
           />
         </div>
-        <div className="nav__menu--desktop">
+        <div class="nav__menu--desktop">
           <Menu closeModal={() => setMenuOpen(false)} />
         </div>
         <div
@@ -59,7 +59,7 @@ const Header = () => (
         </div>
       </nav>
     </div>
-    <nav className="nav__menu--mobile">
+    <nav class="nav__menu--mobile">
       <Show when={menuOpen()} fallback={null}>
         <Menu closeModal={() => setMenuOpen(false)} />
       </Show>

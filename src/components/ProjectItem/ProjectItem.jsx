@@ -44,7 +44,7 @@ const ProjectItem = props => {
               ? "project__body project__body--desktop"
               : "project__body project__body--close project__body--desktop"
           }>
-          <div className="project__image-container">
+          <div class="project__image-container">
             <a href={props.url} target="_blank" rel="noreferrer">
               <img
                 class="project__image"
@@ -63,7 +63,7 @@ const ProjectItem = props => {
               {props.name}
             </a>
           </h2>
-          <div className="project__description">
+          <div class="project__description">
             <p>{props.description}</p>
           </div>
           <a class="project__github-link" href={props.github} target="_blank">
@@ -77,7 +77,7 @@ const ProjectItem = props => {
               alt="github"
             />
           </a>
-          <div className="project__stack">
+          <div class="project__stack">
             <p>{props.stack}</p>{" "}
           </div>
         </div>

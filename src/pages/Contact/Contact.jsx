@@ -27,12 +27,12 @@ const Contact = () => (
     <div class="contact__icons">
       {contacts.map(({ link, img, ariaLabel }) => (
         <a
-          className="contact__icons-link"
+          class="contact__icons-link"
           href={link}
           target="_blank"
           rel="noreferrer">
           <img
-            className={
+            class={
               darkMode()
                 ? "contact__icons-img contact__icons-img--dark-mode"
                 : "contact__icons-img"

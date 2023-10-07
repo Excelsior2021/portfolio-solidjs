@@ -4,11 +4,13 @@ $dropdown-time: 1.5s;
 
 .landing {
   animation: dropdown $dropdown-time cubic-bezier(0, 0, 0.35, 2);
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &__container {
     text-align: center;
-    margin: auto;
-    margin-top: 100px;
     max-width: fit-content;
   }
 
@@ -31,14 +33,11 @@ $dropdown-time: 1.5s;
   }
 
   &__stack {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0 auto;
     margin-top: 50px;
-    flex-wrap: wrap;
   }
 
   &__stack-item {
+    display: inline-block;
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0 0.4rem;

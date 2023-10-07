@@ -21,7 +21,7 @@ const Projects = () => (
       </a>{" "}
       profile for more projects.
     </p>
-    <ul className="projects__list">
+    <ul class="projects__list">
       <For each={projects}>
         {project => (
           <ProjectItem
