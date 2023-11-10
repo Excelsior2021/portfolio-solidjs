@@ -1,10 +1,13 @@
-import headshot from "../../assets/images/headshot.jpg"
 import "./Bio.scss"
 
 const Bio = () => (
   <div class="bio">
     <div class="bio__headshot">
-      <img class="bio__img" src={headshot} alt="jonathan kila" />
+      <img
+        class="bio__img"
+        src="./assets/images/headshot.jpg"
+        alt="jonathan kila"
+      />
     </div>
     <h2 class="bio__heading">Developing the world one app at a time!</h2>
 
@@ -28,10 +31,6 @@ const Bio = () => (
         gaps, learn best practices and collaborate with other developers to
         enable me to be industry ready.
       </p>
-
-      <h3 class="bio__text bio__text--remark">
-        This portfolio was developed with SolidJS
-      </h3>
     </div>
 
     <a

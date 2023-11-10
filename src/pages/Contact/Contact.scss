@@ -15,7 +15,6 @@
 
   &__icons-link {
     margin: 16px;
-    animation: contact-icons 1s linear;
 
     &:hover {
       transform: scale(1.1);
@@ -34,16 +33,5 @@
       filter: invert(100%) sepia(0%) saturate(6%) hue-rotate(157deg)
         brightness(100%) contrast(102%);
     }
-  }
-}
-
-@keyframes contact-icons {
-  0% {
-    transform: translateY(-100px);
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
   }
 }

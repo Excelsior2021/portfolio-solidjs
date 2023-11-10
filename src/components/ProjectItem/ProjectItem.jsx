@@ -1,8 +1,5 @@
 import { createSignal } from "solid-js"
 import { darkMode } from "../Header/Header"
-import arrowDown from "../../assets/icons/arrow-down.png"
-import arrowUp from "../../assets/icons/arrow-up.png"
-import githubIcon from "../../assets/contact_icons/github.svg"
 import "./ProjectItem.scss"
 
 const ProjectItem = props => {
@@ -31,7 +28,11 @@ const ProjectItem = props => {
           </h2>
           <img
             class="project__card-arrow"
-            src={cardOpen() ? arrowUp : arrowDown}
+            src={
+              cardOpen()
+                ? "./assets/icons/arrow-up.png"
+                : "./assets/icons/arrow-down.png"
+            }
             alt="open/close project card"
             width="50px"
             onclick={() => setCardOpen(!cardOpen())}
@@ -73,7 +74,7 @@ const ProjectItem = props => {
                   ? "project__github project__github--dark-mode"
                   : "project__github"
               }
-              src={githubIcon}
+              src="./assets/contact_icons/github.svg"
               alt="github"
             />
           </a>

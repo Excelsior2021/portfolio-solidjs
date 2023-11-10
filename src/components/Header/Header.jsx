@@ -1,10 +1,6 @@
 import { createSignal, createEffect } from "solid-js"
 import { A } from "@solidjs/router"
 import Menu from "../Menu/Menu"
-import menu from "../../assets/icons/menu.svg"
-import menuClose from "../../assets/icons/menu-close.svg"
-import lightMode from "../../assets/icons/light.svg"
-import darkModeImg from "../../assets/icons/dark.svg"
 import "./Header.scss"
 
 const [menuOpen, setMenuOpen] = createSignal(false)
@@ -40,7 +36,11 @@ const Header = () => (
         <div class="nav__icon-container">
           <img
             class={darkMode() ? "nav__icon nav__icon--dark-mode" : "nav__icon"}
-            src={menuOpen() ? menuClose : menu}
+            src={
+              menuOpen()
+                ? "./assets/icons/menu-close.svg"
+                : "./assets/icons/menu.svg"
+            }
             alt="menu"
             onclick={() => setMenuOpen(!menuOpen())}
           />
@@ -53,7 +53,11 @@ const Header = () => (
           onclick={() => setDarkMode(!darkMode())}>
           <img
             class="header__theme-toggle"
-            src={darkMode() ? lightMode : darkModeImg}
+            src={
+              darkMode()
+                ? "./assets/icons/light.svg"
+                : "./assets/icons/dark.svg"
+            }
             alt="theme toggle"
           />
         </div>

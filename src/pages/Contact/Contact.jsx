@@ -1,23 +1,20 @@
 import { darkMode } from "../../components/Header/Header"
-import githubIcon from "../../assets/contact_icons/github.svg"
-import linkedinIcon from "../../assets/contact_icons/linkedin.svg"
-import mailIcon from "../../assets/contact_icons/mail.svg"
 import "./Contact.scss"
 
 const contacts = [
   {
     link: "https://github.com/Excelsior2021",
-    img: githubIcon,
+    img: "./assets/contact_icons/github.svg",
     ariaLabel: "jonathan kila github profile",
   },
   {
     link: "https://www.linkedin.com/in/jonathan-kila",
-    img: linkedinIcon,
+    img: "./assets/contact_icons/linkedin.svg",
     ariaLabel: "jonathan kila linkedin profile",
   },
   {
     link: "mailto: jonathan.kila10@gmail.com",
-    img: mailIcon,
+    img: "./assets/contact_icons/mail.svg",
     ariaLabel: "email jonathan kila",
   },
 ]
