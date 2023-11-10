@@ -4,10 +4,9 @@ $dropdown-time: 1.5s;
 
 .landing {
   animation: dropdown $dropdown-time cubic-bezier(0, 0, 0.35, 2);
-  min-height: 60vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: 120px auto;
 
   &__container {
     text-align: center;

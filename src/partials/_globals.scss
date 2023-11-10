@@ -28,7 +28,11 @@ body {
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: auto 16px;
+  min-height: 60vh;
 
   @include media-desktop {
     margin: auto;
