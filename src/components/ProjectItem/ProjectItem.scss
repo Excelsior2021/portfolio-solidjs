@@ -71,6 +71,10 @@
     width: 60px;
     margin: auto;
 
+    &:hover {
+      transform: scale(1.03);
+    }
+
     &--dark-mode {
       filter: invert(100%) sepia(0%) saturate(6%) hue-rotate(157deg)
         brightness(100%) contrast(102%);
@@ -79,9 +83,10 @@
 
   &__link {
     text-decoration: none;
+    text-align: center;
 
     &:hover {
-      color: rgb(117, 117, 117);
+      transform: scale(1.03);
     }
   }
 
