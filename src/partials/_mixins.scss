@@ -3,3 +3,9 @@
     @content;
   }
 }
+
+@mixin menu-open {
+  body {
+    overflow: hidden;
+  }
+}

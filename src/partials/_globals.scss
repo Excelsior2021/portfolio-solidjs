@@ -16,6 +16,15 @@ html {
 body {
   font-size: 1.6rem;
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 300px;
+}
+
+.body--menu-open {
+  overflow: hidden;
+
+  @include media-desktop {
+    overflow: auto;
+  }
 }
 
 .dark-theme {

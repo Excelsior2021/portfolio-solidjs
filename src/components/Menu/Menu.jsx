@@ -27,7 +27,10 @@ const Menu = props => (
     </ul>
     <div
       class="menu__theme-toggle-container"
-      onclick={() => setDarkMode(!darkMode())}>
+      onclick={e => {
+        e.stopPropagation()
+        setDarkMode(!darkMode())
+      }}>
       <img
         class="menu__theme-toggle"
         src={
