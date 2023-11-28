@@ -1,5 +1,5 @@
 import { A } from "@solidjs/router"
-import { darkMode, setDarkMode } from "../Header/Header"
+import { darkMode, setDarkMode } from "../../App"
 import "./Menu.scss"
 
 const pages = ["bio", "projects", "contact"]

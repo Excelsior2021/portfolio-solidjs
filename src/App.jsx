@@ -1,9 +1,12 @@
+import { createSignal } from "solid-js"
 import { Routes, Route } from "@solidjs/router"
 import Header from "./components/Header/Header"
 import Landing from "./pages/Landing/Landing"
 import Bio from "./pages/Bio/Bio"
 import Projects from "./pages/Projects/Projects"
 import Contact from "./pages/Contact/Contact"
+
+export const [darkMode, setDarkMode] = createSignal(false)
 
 const App = () => (
   <>

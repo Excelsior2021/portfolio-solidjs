@@ -1,9 +1,8 @@
 import { createSignal, createEffect } from "solid-js"
 import { A } from "@solidjs/router"
 import Menu from "../Menu/Menu"
+import { darkMode, setDarkMode } from "../../App"
 import "./Header.scss"
-
-export const [darkMode, setDarkMode] = createSignal(false)
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = createSignal(false)

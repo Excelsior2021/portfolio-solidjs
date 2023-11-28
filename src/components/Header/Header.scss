@@ -19,10 +19,6 @@
     }
   }
 
-  a {
-    color: black;
-  }
-
   &--dark-mode {
     background-color: rgba(75, 103, 138);
 
@@ -115,6 +111,9 @@
   &__icon {
     cursor: pointer;
     width: 50px;
+
+    filter: invert(38%) sepia(14%) saturate(1314%) hue-rotate(174deg)
+      brightness(96%) contrast(85%);
 
     &--dark-mode {
       filter: invert(100%) sepia(0%) saturate(6%) hue-rotate(157deg)

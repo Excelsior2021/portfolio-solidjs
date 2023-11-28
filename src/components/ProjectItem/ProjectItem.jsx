@@ -1,5 +1,5 @@
 import { createSignal } from "solid-js"
-import { darkMode } from "../Header/Header"
+import { darkMode } from "../../App"
 import "./ProjectItem.scss"
 
 const ProjectItem = props => {

@@ -1,4 +1,4 @@
-import { darkMode } from "../../components/Header/Header"
+import { darkMode } from "../../App"
 import "./Contact.scss"
 
 const contacts = [

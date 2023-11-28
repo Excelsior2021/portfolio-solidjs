@@ -22,7 +22,7 @@
   }
 
   .project__link {
-    color: black;
+    // color: black;
   }
 
   &--dark-mode {
@@ -74,6 +74,9 @@
     &:hover {
       transform: scale(1.03);
     }
+
+    filter: invert(38%) sepia(14%) saturate(1314%) hue-rotate(174deg)
+      brightness(96%) contrast(85%);
 
     &--dark-mode {
       filter: invert(100%) sepia(0%) saturate(6%) hue-rotate(157deg)
@@ -132,14 +135,10 @@
   &__description,
   &__stack {
     margin: 1.6rem auto;
+    text-align: center;
 
     @include media-desktop {
       margin: auto;
     }
-  }
-
-  &__stack {
-    text-align: center;
-    margin-top: auto;
   }
 }

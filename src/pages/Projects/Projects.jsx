@@ -1,5 +1,5 @@
 import { For } from "solid-js"
-import { darkMode } from "../../components/Header/Header"
+import { darkMode } from "../../App"
 import ProjectItem from "../../components/ProjectItem/ProjectItem"
 import projects from "../../store/projects"
 import "./Projects.scss"

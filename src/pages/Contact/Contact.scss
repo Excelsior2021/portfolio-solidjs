@@ -29,6 +29,9 @@
     display: block;
     width: 100px;
 
+    filter: invert(38%) sepia(14%) saturate(1314%) hue-rotate(174deg)
+      brightness(96%) contrast(85%);
+
     &--dark-mode {
       filter: invert(100%) sepia(0%) saturate(6%) hue-rotate(157deg)
         brightness(100%) contrast(102%);
