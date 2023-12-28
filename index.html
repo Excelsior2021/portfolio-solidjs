@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/ico" href="./favicon.png" />
-    <!--Pendo Snippet-->
-    <script>
-      ;(function (apiKey) {
-        ;(function (p, e, n, d, o) {
-          var v, w, x, y, z
-          o = p[d] = p[d] || {}
-          o._q = o._q || []
-          v = ["initialize", "identify", "updateOptions", "pageLoad", "track"]
-          for (w = 0, x = v.length; w < x; ++w)
-            (function (m) {
-              o[m] =
-                o[m] ||
-                function () {
-                  const test = [m].concat([].slice.call(arguments, 0))
-                  o._q[m === v[0] ? "unshift" : "push"](test)
-                }
-            })(v[w])
-          y = e.createElement(n)
-          y.async = !0
-          y.src = "https://cdn.pendo.io/agent/static/" + apiKey + "/pendo.js"
-          z = e.getElementsByTagName(n)[0]
-          z.parentNode.insertBefore(y, z)
-        })(window, document, "script", "pendo")
-      })("a5a526f6-bbc3-4aa9-42f4-61424b9c822b")
 
-      pendo.initialize({
-        visitor: {
-          id: "VISITOR-UNIQUE-ID",
-          screenSize: `${screen.height} × ${screen.width}`,
-        },
-      })
-    </script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/ico" href="././assets/favicon.png" />
+  <!--Pendo Snippet-->
+  <script>
+    ;
+    (function(apiKey) {
+      ;
+      (function(p, e, n, d, o) {
+        var v, w, x, y, z
+        o = p[d] = p[d] || {}
+        o._q = o._q || []
+        v = ["initialize", "identify", "updateOptions", "pageLoad", "track"]
+        for (w = 0, x = v.length; w < x; ++w)
+          (function(m) {
+            o[m] =
+              o[m] ||
+              function() {
+                const test = [m].concat([].slice.call(arguments, 0))
+                o._q[m === v[0] ? "unshift" : "push"](test)
+              }
+          })(v[w])
+        y = e.createElement(n)
+        y.async = !0
+        y.src = "https://cdn.pendo.io/agent/static/" + apiKey + "/pendo.js"
+        z = e.getElementsByTagName(n)[0]
+        z.parentNode.insertBefore(y, z)
+      })(window, document, "script", "pendo")
+    })("a5a526f6-bbc3-4aa9-42f4-61424b9c822b")
 
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-5YK1TNH37M"></script>
-    <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag("js", new Date())
+    pendo.initialize({
+      visitor: {
+        id: "VISITOR-UNIQUE-ID",
+        screenSize: `${screen.height} × ${screen.width}`,
+      },
+    })
+  </script>
 
-      gtag("config", "G-5YK1TNH37M")
-    </script>
-    <title>Jonathan Kila | Web Developer</title>
-  </head>
-  <body id="body">
-    <div id="root"></div>
-    <script src="/src/index.jsx" type="module"></script>
-  </body>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YK1TNH37M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || []
+
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag("js", new Date())
+
+    gtag("config", "G-5YK1TNH37M")
+  </script>
+  <title>Jonathan Kila | Web Developer</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script src="/src/index.jsx" type="module"></script>
+</body>
+
 </html>

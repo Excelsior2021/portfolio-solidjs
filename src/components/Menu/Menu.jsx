@@ -1,5 +1,5 @@
 import { A } from "@solidjs/router"
-import { darkMode, setDarkMode } from "../../App"
+import { darkMode } from "../../App"
 import "./Menu.scss"
 
 const pages = ["bio", "projects", "contact"]
@@ -19,26 +19,22 @@ const MenuItem = props => {
 }
 
 const Menu = props => (
-  <div class="menu" onclick={props.closeModal}>
-    <ul class={darkMode() ? "menu__list menu__list--dark-mode" : "menu__list"}>
+  <div
+    class={
+      props.displayMenu
+        ? darkMode()
+          ? "menu menu--display menu--dark-mode"
+          : "menu menu--display"
+        : darkMode()
+        ? "menu menu--dark-mode"
+        : "menu"
+    }
+    onclick={props.closeModal}>
+    <ul class="menu__list">
       <For each={pages}>
         {page => <MenuItem page={page} closeModal={props.closeModal} />}
       </For>
     </ul>
-    <div
-      class="menu__theme-toggle-container"
-      onclick={e => {
-        e.stopPropagation()
-        setDarkMode(!darkMode())
-      }}>
-      <img
-        class="menu__theme-toggle"
-        src={
-          darkMode() ? "./assets/icons/light.svg" : "./assets/icons/dark.svg"
-        }
-        alt="theme toggle"
-      />
-    </div>
   </div>
 )
 

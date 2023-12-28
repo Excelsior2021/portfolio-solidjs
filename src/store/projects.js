@@ -13,7 +13,7 @@ const projects = [
     id: "pairs",
     name: "Pairs",
     description:
-      "An interactive card game. Developed as a terminal based game with Python, then as a web application using React and now as a web application using SolidJS. There is a multiplayer mode that allows two players to play together with the use of Socket.IO.",
+      "An interactive card game. Developed as a terminal based game with Python, then as a web application using React and now as a web application using SolidJS. Single player and multiplayer.",
     stack: "SolidJS, SASS, TypeScript, Node.js, Express.js, Socket.IO",
     alt: "Pairs App",
     url: "https://pairs-card-game.vercel.app",

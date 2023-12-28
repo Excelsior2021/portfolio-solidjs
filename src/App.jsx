@@ -1,4 +1,4 @@
-import { createSignal } from "solid-js"
+import { createSignal, createEffect } from "solid-js"
 import { Routes, Route } from "@solidjs/router"
 import Header from "./components/Header/Header"
 import Landing from "./pages/Landing/Landing"
@@ -7,6 +7,20 @@ import Projects from "./pages/Projects/Projects"
 import Contact from "./pages/Contact/Contact"
 
 export const [darkMode, setDarkMode] = createSignal(false)
+
+createEffect(() => {
+  if (localStorage.getItem("darkMode")) setDarkMode(true)
+})
+
+createEffect(() => {
+  if (darkMode()) {
+    document.body.classList.add("dark-theme")
+    localStorage.setItem("darkMode", JSON.stringify(true))
+  } else {
+    document.body.classList.remove("dark-theme")
+    localStorage.removeItem("darkMode")
+  }
+})
 
 const App = () => (
   <>

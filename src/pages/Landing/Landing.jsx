@@ -16,15 +16,19 @@ const stack = [
   "SolidJS",
 ]
 
-const StackItem = props => <li class="landing__stack-item">{props.tech}.</li>
-
 const Landing = () => (
   <div class="landing">
     <div class="landing__container">
-      <p class="landing__heading">Hi, my name is Jonathan</p>
-      <p class="landing__sub-heading">I'm a web developer</p>
-      <ul class="landing__stack">
-        <For each={stack}>{tech => <StackItem tech={tech} />}</For>
+      <p data-test="landing_heading" class="landing__heading">
+        Hi, my name is Jonathan
+      </p>
+      <p data-test="landing_sub-heading" class="landing__sub-heading">
+        I'm a web developer
+      </p>
+      <ul data-test="landing_stack" class="landing__stack">
+        <For each={stack}>
+          {tech => <li class="landing__stack-item">{tech}.</li>}
+        </For>
       </ul>
     </div>
   </div>

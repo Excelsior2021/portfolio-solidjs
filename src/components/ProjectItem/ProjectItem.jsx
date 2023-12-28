@@ -4,18 +4,10 @@ import "./ProjectItem.scss"
 
 const ProjectItem = props => {
   const [cardOpen, setCardOpen] = createSignal(false)
-  const [isLoading, setIsLoading] = createSignal(true)
 
   return (
     <li class="project-item">
-      <div
-        class={
-          darkMode()
-            ? `project project--dark-mode ${isLoading() ? "project--flip" : ""}`
-            : `project ${isLoading() ? "project--flip" : ""}`
-        }
-        onmouseover={() => setIsLoading(false)}
-        onfocus={() => setIsLoading(false)}>
+      <div class={darkMode() ? "project project--dark-mode" : "project"}>
         <div class="project__head">
           <h2 class="project__name project__name--mobile">
             <a

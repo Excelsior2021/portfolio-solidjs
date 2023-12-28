@@ -1,4 +1,4 @@
-import { createSignal, createEffect } from "solid-js"
+import { createSignal } from "solid-js"
 import { A } from "@solidjs/router"
 import Menu from "../Menu/Menu"
 import { darkMode, setDarkMode } from "../../App"
@@ -7,25 +7,8 @@ import "./Header.scss"
 const Header = () => {
   const [menuOpen, setMenuOpen] = createSignal(false)
 
-  createEffect(() => {
-    const darkModeSetting = localStorage.getItem("darkMode")
-    if (darkModeSetting === "true") {
-      setDarkMode(true)
-    }
-  })
-
-  createEffect(() => {
-    if (darkMode()) {
-      document.body.classList.add("dark-theme")
-      localStorage.setItem("darkMode", JSON.stringify(true))
-    } else {
-      document.body.classList.remove("dark-theme")
-      localStorage.removeItem("darkMode")
-    }
-  })
-
   const handleMenuOpen = menuOpen => {
-    const body = document.getElementById("body")
+    const body = document.querySelector("body")
     if (menuOpen) body.classList.remove("body--menu-open")
     else body.classList.add("body--menu-open")
     setMenuOpen(!menuOpen)
@@ -50,7 +33,9 @@ const Header = () => {
         </A>
 
         <nav class="nav">
-          <div class="nav__icon-container">
+          <div
+            class="nav__icon-container"
+            onclick={() => handleMenuOpen(menuOpen())}>
             <img
               class={
                 darkMode() ? "nav__icon nav__icon--dark-mode" : "nav__icon"
@@ -61,14 +46,18 @@ const Header = () => {
                   : "./assets/icons/menu.svg"
               }
               alt="menu"
-              onclick={() => handleMenuOpen(menuOpen())}
             />
           </div>
-          <div class="nav__menu--desktop">
-            <Menu closeModal={() => handleMenuOpen(true)} />
-          </div>
+          <Menu
+            displayMenu={menuOpen()}
+            closeModal={() => handleMenuOpen(true)}
+          />
           <div
-            class="header__theme-toggle-container"
+            class={
+              menuOpen()
+                ? "header__theme-toggle-container header__theme-toggle-container--display"
+                : "header__theme-toggle-container"
+            }
             onclick={() => setDarkMode(!darkMode())}>
             <img
               class="header__theme-toggle"
@@ -82,11 +71,6 @@ const Header = () => {
           </div>
         </nav>
       </div>
-      <nav class="nav__menu--mobile">
-        <Show when={menuOpen()}>
-          <Menu closeModal={() => handleMenuOpen(true)} />
-        </Show>
-      </nav>
     </header>
   )
 }

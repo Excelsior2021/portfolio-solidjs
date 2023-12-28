@@ -9,27 +9,17 @@ const Bio = () => (
         alt="jonathan kila"
       />
     </div>
-    <h2 class="bio__heading">Developing the world one app at a time!</h2>
+    {/* <h2 class="bio__heading">Developing the world one app at a time!</h2> */}
 
     <div class="bio__text-container">
       <p class="bio__text">
-        I love technology. I love solving problems. I believe that tech is the
-        main way we'll solve problems in the future. From personal problems to
-        global problems and beyond. I want to contribute to solving these
-        problems.
+        I love technology and solving problems. Tech is the main way we'll solve
+        problems in the future. I want to contribute to solving these problems.
       </p>
 
       <p class="bio__text">
-        I am a self-taught developer, whose passion for solving problems through
-        computer programming grows from strength to strength as I continue to
-        learn and develop.
-      </p>
-
-      <p class="bio__text">
-        I enjoy learning independently but I also embarked on a web development
-        bootcamp to enhance my skills and pick up new ones. Also, to fill in any
-        gaps, learn best practices and collaborate with other developers to
-        enable me to be industry ready.
+        I am a developer, whose passion for solving problems through programming
+        grows from strength to strength as I continue to learn and develop.
       </p>
     </div>
 
