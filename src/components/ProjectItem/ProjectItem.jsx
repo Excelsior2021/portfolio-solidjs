@@ -1,4 +1,5 @@
 import { createSignal } from "solid-js"
+import { A } from "@solidjs/router"
 import { darkMode } from "../../App"
 import "./ProjectItem.scss"
 
@@ -10,13 +11,13 @@ const ProjectItem = props => {
       <div class={darkMode() ? "project project--dark-mode" : "project"}>
         <div class="project__head">
           <h2 class="project__name project__name--mobile">
-            <a
+            <A
               class="project__link"
               href={props.url}
               target="_blank"
               rel="noreferrer">
               {props.name}
-            </a>
+            </A>
           </h2>
           <img
             class="project__card-arrow"
@@ -38,28 +39,28 @@ const ProjectItem = props => {
               : "project__body project__body--close project__body--desktop"
           }>
           <div class="project__image-container">
-            <a href={props.url} target="_blank" rel="noreferrer">
+            <A href={props.url} target="_blank" rel="noreferrer">
               <img
                 class="project__image"
                 src={props.img}
                 alt={props.alt}
                 role="project image and link to project site"
               />
-            </a>
+            </A>
           </div>
           <h2 class="project__name project__name--desktop">
-            <a
+            <A
               class="project__link"
               href={props.url}
               target="_blank"
               rel="noreferrer">
               {props.name}
-            </a>
+            </A>
           </h2>
           <div class="project__description">
             <p>{props.description}</p>
           </div>
-          <a class="project__github-link" href={props.github} target="_blank">
+          <A class="project__github-link" href={props.github} target="_blank">
             <img
               class={
                 darkMode()
@@ -69,9 +70,9 @@ const ProjectItem = props => {
               src="./assets/contact_icons/github.svg"
               alt="github"
             />
-          </a>
+          </A>
           <div class="project__stack">
-            <p>{props.stack}</p>{" "}
+            <p>{props.stack}</p>
           </div>
         </div>
       </div>

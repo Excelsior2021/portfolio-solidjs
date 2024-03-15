@@ -1,3 +1,4 @@
+import { A } from "@solidjs/router"
 import "./Bio.scss"
 
 const Bio = () => (
@@ -23,7 +24,7 @@ const Bio = () => (
       </p>
     </div>
 
-    <a
+    <A
       href="https://www.codewars.com/users/excelsior2021"
       target="_blank"
       rel="noreferrer"
@@ -36,7 +37,7 @@ const Bio = () => (
           class="bio__codewars-img"
         />
       </div>
-    </a>
+    </A>
   </div>
 )
 

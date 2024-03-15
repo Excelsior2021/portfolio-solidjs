@@ -1,4 +1,5 @@
 import { For } from "solid-js"
+import { A } from "@solidjs/router"
 import { darkMode } from "../../App"
 import ProjectItem from "../../components/ProjectItem/ProjectItem"
 import projects from "../../store/projects"
@@ -8,7 +9,7 @@ const Projects = () => (
   <div class="projects">
     <p class="projects__text">
       Not an exhuastive list. Please check out my{" "}
-      <a
+      <A
         class={
           darkMode()
             ? "projects__text-link projects__text-link--dark-mode"
@@ -18,7 +19,7 @@ const Projects = () => (
         target="_blank"
         rel="noreferrer">
         GitHub
-      </a>{" "}
+      </A>
       profile for more projects.
     </p>
     <ul class="projects__list">

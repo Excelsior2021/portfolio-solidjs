@@ -1,3 +1,4 @@
+import { A } from "@solidjs/router"
 import { darkMode } from "../../App"
 import "./Contact.scss"
 
@@ -26,7 +27,7 @@ const Contact = () => (
   <div class="contact">
     <div class="contact__icons">
       {contacts.map(({ link, img, alt, ariaLabel }) => (
-        <a
+        <A
           class="contact__icons-link"
           href={link}
           target="_blank"
@@ -41,7 +42,7 @@ const Contact = () => (
             src={img}
             aria-label={ariaLabel}
           />
-        </a>
+        </A>
       ))}
     </div>
   </div>
